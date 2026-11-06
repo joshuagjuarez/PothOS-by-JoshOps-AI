@@ -66,6 +66,8 @@ does not claim integration, endorsement or support from those projects.
 
 ## Start here
 
+- [Support and report routes](SUPPORT.md)
+- [Project governance](GOVERNANCE.md)
 - [Contribute](CONTRIBUTING.md)
 - [Community principles](COMMUNITY_PRINCIPLES.md)
 - [Report an issue](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues)
