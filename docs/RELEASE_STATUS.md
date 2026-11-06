@@ -5,8 +5,8 @@ Updated November 6, 2026.
 | Deliverable | Status |
 | --- | --- |
 | This project README, mission and contribution documentation | Prepared in this repository |
-| Public interim documentation hub | Available at [the existing profile repository](https://github.com/joshuagjuarez/joshuagjuarez/blob/main/POTHOS.md) |
-| New repository public visibility | Controlled by the actual GitHub setting; a name containing Public does not set visibility |
+| Public project home | [PothOS by JoshOps AI](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI) |
+| Repository visibility | Product and company index confirmed Public on November 6, 2026 |
 | Prospective runtime license | Scope and terms under review |
 | Independently installable runtime source | Not released |
 | Native voice mechanisms | Existing implementation; public packaging and physical device qualification remain separate |

@@ -9,7 +9,7 @@ Use an issue to describe one concrete problem, its effect on a person and the
 smallest improvement that could be checked. Documentation, privacy requirements,
 accessibility feedback and reduced synthetic examples are useful now.
 
-Use **PothOS**, **JoshOps AI**, **Memex Continuity Lab**, **ArcheAgent** and
+Use **PothOS**, **JoshOps AI**, **ArcheAgent** and
 **PothOS Orb** accurately. Write ArcheAgent in full in public project prose.
 Do not invent new product names, replace the existing continuity thesis or treat
 the founder's private ArcheAgents as examples to distribute.

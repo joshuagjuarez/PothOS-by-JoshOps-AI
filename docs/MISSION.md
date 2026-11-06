@@ -1,8 +1,7 @@
 # Mission: carry meaning, reduce noise
 
-PothOS grows from the purpose expressed in
-[Memex Continuity Lab](https://devpost.com/software/memex-continuity-lab):
-continuity that preserves source, meaning, corrections and human authority.
+PothOS is intended to provide continuity that preserves source, meaning,
+corrections and human authority.
 
 The practical problem is familiar. A person develops ideas and obligations
 across conversations, applications, machines and years. A new session can lose

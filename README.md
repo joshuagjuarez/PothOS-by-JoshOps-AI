@@ -7,10 +7,8 @@ meaningful work across infrastructure, platforms, software, devices and models
 without repeatedly losing context or surrendering control of personal information.
 
 The purpose is to reduce noise, recover useful signal, preserve what a person
-actually meant and help them develop themselves and help others. This continues
-the work described in [Memex Continuity Lab](https://devpost.com/software/memex-continuity-lab).
-JoshOps AI is the project identity; PothOS is the product. The Lab's continuity
-ethos is part of its foundation.
+actually meant and help them develop themselves and help others.
+JoshOps AI is the project identity; PothOS is the product.
 
 **Current contents: mission, design and contributor documentation.**
 The independently installable runtime source has not been released. This repository
