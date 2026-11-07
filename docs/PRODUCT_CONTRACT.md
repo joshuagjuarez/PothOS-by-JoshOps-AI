@@ -59,6 +59,36 @@ device and receipt requests; and correct scope after account switching,
 membership revocation and restart. Preserve original work and receipt identities
 without replaying completed effects.
 
+## Common account profile and attached sources
+
+The same product must load each authenticated operator's own populated profile
+through the existing identity, World, memory and source owners. An established
+profile retains its accumulated context and permitted source references. New
+accounts use the same structural rules with their own records and configuration.
+
+The profile can reference one or many repositories selected by its operator
+within the actual connection's granted access. Repository count does not define
+a product edition. Preserve each attachment's repository identity, selected
+branch or immutable revision, source purpose, ownership and applicable license
+status. Selecting a source must not change process-wide corpus roots or another
+account's bindings.
+
+An encompassing profile is an index into attributable, separately scoped source,
+history, roles and resources. Preserve originals, amendments, provenance and
+personal, organizational and venture boundaries. This requirement does not
+define a new memory store, fixed storage quota or number of memory workers.
+
+The common connector contract should be reused across supported chat clients.
+Each client still needs its own supported authenticated transport and permitted
+provider connections. A successful connection in one client does not certify
+another client's GitHub access or runtime operation.
+
+Customer distribution must preserve the common product code and capabilities
+while replacing account-specific defaults with the new operator's own profile,
+source attachments and grants. Removing a display name alone is insufficient
+if private bindings or records remain. Product licensing and an operator's
+private repository access are separate recorded responsibilities.
+
 ## Product and operator commitments
 
 - **Official PothOS software is free of charge, always.** The direction includes

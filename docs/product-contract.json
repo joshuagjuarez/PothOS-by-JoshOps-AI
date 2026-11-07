@@ -110,6 +110,25 @@
       "unauthorized_cross_account_data_device_and_receipt_requests_refused",
       "account_switch_and_membership_revocation_enforce_current_scope",
       "restart_and_original_record_recovery_without_effect_replay"
-    ]
+    ],
+    "profile_and_sources": {
+      "standing": "PRODUCT_REQUIREMENTS_NOT_RUNTIME_VERIFICATION",
+      "shared_profile_structure": true,
+      "profile_owner": "Existing authenticated identity, World, memory and source owners.",
+      "populated_state": "Each account retains its own accumulated context, history, roles and permitted resource references.",
+      "repository_selection": "One or many operator-selected repositories within the actual provider connection's grants; repository count is not a product edition.",
+      "source_provenance_fields": [
+        "repository_identity",
+        "selected_branch_or_immutable_revision",
+        "source_purpose",
+        "ownership",
+        "applicable_license_status"
+      ],
+      "preserve_existing_corpus_roots": true,
+      "new_memory_store_defined": false,
+      "fixed_memory_quota_defined": false,
+      "shared_connector_contract": "Reuse the common service contract across supported authenticated chat-client transports; verify each client's provider access separately.",
+      "customer_derivation": "Preserve common product code and capabilities; replace account-specific defaults and bindings with the new operator's own profile and permissions."
+    }
   }
 }
