@@ -1,0 +1,87 @@
+{
+  "schema": "pothos.public-product-contract.v1",
+  "updated": "2026-11-07",
+  "product": "PothOS",
+  "company": "JoshOps AI",
+  "scope": "Official product identity, entry points, operator requirements and release boundaries; not a runtime grant or verification receipt.",
+  "canonical_contract_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/PRODUCT_CONTRACT.md",
+  "official_entry": {
+    "name": "Personal PothOS",
+    "url": "https://pothos.joshops.ai",
+    "app_url": "https://pothos.joshops.ai/app",
+    "connect_url": "https://pothos.joshops.ai/connect",
+    "audiences": [
+      "individuals",
+      "nonprofits",
+      "businesses"
+    ],
+    "role": "existing_official_web_front_door"
+  },
+  "official_links": {
+    "company": "https://joshops.ai",
+    "repository": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI",
+    "support": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/SUPPORT.md",
+    "issues": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues",
+    "governance": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/GOVERNANCE.md",
+    "license_status": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/LICENSE_STATUS.md",
+    "privacy": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/PRIVACY.md",
+    "release_status": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md",
+    "distribution": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/DISTRIBUTION.md",
+    "contributing": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/CONTRIBUTING.md"
+  },
+  "commitments": {
+    "official_software_price_usd": 0,
+    "official_software_always_free": true,
+    "scope": [
+      "personal",
+      "nonprofit",
+      "ordinary_business_use"
+    ],
+    "external_costs": "Optional third-party services, hardware and provider usage retain their own disclosed costs.",
+    "operator_requirements": [
+      "Use each operator's own identity, accounts, data, ArcheAgents and permitted connections.",
+      "Preserve independent information and permissions; the shared entry does not share private state or authority.",
+      "Retain reusable profile, identity, memory, agent, recovery, accessibility and developer mechanisms where implemented.",
+      "Exclude operator-specific instances, private data, credentials and configuration from public packages."
+    ]
+  },
+  "official_release_owner": {
+    "github": "joshuagjuarez",
+    "responsibilities": [
+      "official_project_direction",
+      "official_change_acceptance",
+      "official_branding",
+      "publication",
+      "official_releases"
+    ],
+    "community_contributions": "Existing issue and pull-request process; participation does not itself grant access.",
+    "downstream_rights": "Governed by the applicable license, separately from official project decisions."
+  },
+  "licensing": {
+    "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/LICENSE_STATUS.md",
+    "final_runtime_license_applied": false,
+    "new_runtime_grant_from_this_contract": false,
+    "earlier_scoped_documentation_grants_preserved": true
+  },
+  "release_boundaries": {
+    "native_application": "Continue existing native application and shared runtime; qualify each platform package.",
+    "provider_connections": "Continue existing adapters; qualify each provider or device through its own permitted connection.",
+    "browser_source_candidate": {
+      "role": "isolated_source_export_preparation",
+      "official_public_entry": false,
+      "replacement_for_existing_application": false,
+      "standalone_runtime_release": false
+    },
+    "public_repository_contents": "Documentation and community materials; standalone runtime source not released.",
+    "signed_customer_packages": "Unfinished; current availability requires release-specific evidence.",
+    "required_verification": [
+      "new_operator_setup",
+      "independent_data_and_permissions",
+      "useful_task",
+      "restart_and_same_record_recovery",
+      "updates",
+      "rollback"
+    ],
+    "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md"
+  }
+}

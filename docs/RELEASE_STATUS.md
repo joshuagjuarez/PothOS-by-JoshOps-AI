@@ -1,15 +1,19 @@
 # Release status
 
-Updated November 7, 2026.
+Updated November 7, 2026. The [product contract](PRODUCT_CONTRACT.md) defines the
+official entry, operator boundary and release ownership; this page records what
+is available or still needs qualification.
 
 | Deliverable | Status |
 | --- | --- |
+| Existing Personal PothOS front door | Official entry at [pothos.joshops.ai](https://pothos.joshops.ai), with [App](https://pothos.joshops.ai/app) and [Connect](https://pothos.joshops.ai/connect); independent-user and native-runtime qualification remain separate |
+| Product identity, official URLs and operator boundaries | [Product contract](PRODUCT_CONTRACT.md) and [machine-readable companion](product-contract.json) |
 | This project README, mission and contribution documentation | Available in this public repository |
 | Community announcement: free local AI infrastructure and individual ArcheAgents | [Published November 7, 2026](PRESS_RELEASE.md) |
 | Public project home | [PothOS by JoshOps AI](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI) |
 | Repository visibility | Product and company index confirmed Public on November 6, 2026 |
 | Prospective runtime license | Protective-use and distribution terms under review; no final runtime grant |
-| Clean-user browser/source candidate | Separate unpublished preparation in progress; not a standalone runtime release |
+| Isolated browser/source export candidate | Separate unpublished preparation; not the public entry, a Personal PothOS/native-app replacement or a standalone runtime release |
 | Platform distribution | [Routes documented](DISTRIBUTION.md); no public signed installer or App Store release claimed |
 | IDE, printing/slicer and emulator claims | [Evidence and remaining work](CAPABILITIES.md) distinguished by component |
 | Independently installable runtime source | Not released |
@@ -20,7 +24,9 @@ Updated November 7, 2026.
 | Robotics package | Not included |
 | Founder/private ArcheAgents, memories, voices and credentials | Excluded |
 
-The website at [joshops.ai](https://joshops.ai) describes current access.
+[joshops.ai](https://joshops.ai) is the company website. The existing
+[Personal PothOS](https://pothos.joshops.ai) is the official front door. The front door is shared;
+each person's identity, accounts and information remain their own.
 An invited hosted beta, connection kit and standalone local runtime are distinct
 deliverables. No complete runtime installation command is supplied here because
 that public package has not yet been qualified.

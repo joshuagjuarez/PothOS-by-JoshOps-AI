@@ -2,6 +2,11 @@
 
 Updated November 7, 2026.
 
+The [product contract](docs/PRODUCT_CONTRACT.md) identifies the official
+[Personal PothOS](https://pothos.joshops.ai) entry, independent-operator boundary
+and JoshOps AI release ownership. Those product requirements do not replace this
+license-status notice or grant reuse rights beyond applicable licenses.
+
 ## Current contents
 
 This repository contains newly prepared mission, design and community

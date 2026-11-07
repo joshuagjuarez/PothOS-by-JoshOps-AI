@@ -2,6 +2,19 @@
 
 ## Free local AI infrastructure. Your own ArcheAgents. Human control.
 
+**Open PothOS:** [Personal PothOS](https://pothos.joshops.ai) ·
+[App](https://pothos.joshops.ai/app) · [Connect](https://pothos.joshops.ai/connect).
+The existing Personal PothOS is the official web front door for individuals,
+nonprofits and businesses. Each operator uses their own identity, data and
+permitted connections. This shared entry does not share another person's account
+or private environment.
+
+The [product contract](docs/PRODUCT_CONTRACT.md) is the common reference for the
+app, connections, source and release boundaries. Its
+[machine-readable companion](docs/product-contract.json) records the same links
+and requirements. Platform availability remains in
+[release status](docs/RELEASE_STATUS.md).
+
 PothOS exists to make infrastructure for local AI freely available to people
 around the world, so they can build their own **ArcheAgents** and retain control
 over their knowledge, tools and digital lives. The purpose is human
@@ -45,8 +58,10 @@ material; they do not license the private runtime.
 - Let people work with their own **ArcheAgents**, with identities and responsibilities
   they choose, while preserving human authority.
 
-An ArcheAgent is part of that continuity framework. No personal ArcheAgent,
-private voice, memory or founder environment is included here.
+An ArcheAgent is part of that continuity framework. No existing person's private
+ArcheAgent, voice, memory or founder environment is distributed here. Reusable
+profile, identity, memory and agent mechanisms remain part of the intended
+product; a new operator starts with their own information.
 
 Read [mission and continuity](docs/MISSION.md) and
 [cognitive privacy](docs/PRIVACY.md).
