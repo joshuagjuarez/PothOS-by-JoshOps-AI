@@ -70,8 +70,8 @@ testing real workflows are welcome. The immediate work is:
    speech input/output, recording controls and device behavior.
 5. Document a small supported configuration before making wider compatibility claims.
 
-Native voice work exists in the underlying project. Its public packaging and
-device qualification remain work to complete. See [accessibility](docs/ACCESSIBILITY.md),
+Voice integration source is present in the underlying project. Its runtime/backend
+behavior, public packaging and physical-device qualification remain to be verified. See [accessibility](docs/ACCESSIBILITY.md),
 [the roadmap](docs/ROADMAP.md) and [release status](docs/RELEASE_STATUS.md).
 
 Developers using Ollama, llama.cpp, LM Studio, LocalAI, OpenAI, Claude, Grok and
@@ -79,6 +79,9 @@ other ecosystems are welcome to contribute relevant expertise. This invitation
 does not claim integration, endorsement or support from those projects.
 
 ## Start here
+
+- [Capabilities and developer participation](docs/CAPABILITIES.md)
+- [Distribution paths and current availability](docs/DISTRIBUTION.md)
 
 - [Support and report routes](SUPPORT.md)
 - [Project governance](GOVERNANCE.md)

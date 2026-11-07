@@ -1,6 +1,6 @@
 # License and publication status
 
-Updated November 6, 2026.
+Updated November 7, 2026.
 
 ## Current contents
 
@@ -8,11 +8,15 @@ This repository contains newly prepared mission, design and community
 documentation. It does not contain the standalone PothOS runtime or grant a
 license to private code, private ArcheAgents, memories, voices or credentials.
 
-The founder's direction is that official PothOS software remain free and that
-others must not charge people for PothOS or exploit their private cognitive
-information. Prospective runtime terms are being defined. A final decision on
-related paid services and use in a person's own income-producing work remains
-to be recorded.
+Official PothOS software will be free of charge. The founder's direction is to
+keep the PothOS core from becoming a paywall and to prohibit exploitation of
+private cognitive information. The no-charge direction includes personal,
+nonprofit and ordinary business use, including using the tools in a person's own
+income-producing work.
+
+Exact prospective rules for redistribution and derivatives are being drafted.
+The treatment of paid hosting, installation, support and independent additions
+remains an owner decision; ordinary business use does not settle those rules.
 
 No new runtime or developer-component license grant is being made while that
 scope is unresolved. Engineering, privacy review and release preparation continue.

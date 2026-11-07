@@ -8,11 +8,14 @@ Updated November 7, 2026.
 | Community announcement: free local AI infrastructure and individual ArcheAgents | [Published November 7, 2026](PRESS_RELEASE.md) |
 | Public project home | [PothOS by JoshOps AI](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI) |
 | Repository visibility | Product and company index confirmed Public on November 6, 2026 |
-| Prospective runtime license | Scope and terms under review |
+| Prospective runtime license | Protective-use and distribution terms under review; no final runtime grant |
+| Clean-user browser/source candidate | Separate unpublished preparation in progress; not a standalone runtime release |
+| Platform distribution | [Routes documented](DISTRIBUTION.md); no public signed installer or App Store release claimed |
+| IDE, printing/slicer and emulator claims | [Evidence and remaining work](CAPABILITIES.md) distinguished by component |
 | Independently installable runtime source | Not released |
 | ArcheAgent profile, source-backed history and corpus | [Requirements documented](CONTINUING_ARCHEAGENTS.md); public runtime qualification remains required |
 | Daily legacy-work recovery and metacognitive review | Trigger, continuity and restart criteria documented; an always-on public service is not established |
-| Native voice mechanisms | Existing implementation; public packaging and physical device qualification remain separate |
+| Voice integration | Source present; runtime/backend behavior, public packaging and physical-device qualification remain to be verified |
 | Community-to-private-stack Help Desk relay | Not verified |
 | Robotics package | Not included |
 | Founder/private ArcheAgents, memories, voices and credentials | Excluded |
