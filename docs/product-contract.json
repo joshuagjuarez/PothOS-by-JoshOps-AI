@@ -83,5 +83,33 @@
       "rollback"
     ],
     "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md"
+  },
+  "account_model": {
+    "standing": "PRODUCT_REQUIREMENTS_NOT_RUNTIME_VERIFICATION",
+    "shared_feature_set": true,
+    "shared_account_security_model": true,
+    "founder_feature_tier": false,
+    "account_resolution": "Existing identity and Membership owners bind verified provider identity to the native principal, permitted account/World memberships and registered resources. Email text, role names and plugin titles are not grants.",
+    "account_specific_state": [
+      "history_and_biography",
+      "memory_and_corpus",
+      "legacy_work_and_receipts",
+      "configured_agents_and_roles",
+      "registered_devices_and_fleet",
+      "settings_and_explicit_permissions"
+    ],
+    "existing_account_continuity": "Preserve established state, identity, fleet registrations and source lineage when adopting or updating the common product.",
+    "new_account_setup": "Establish operator-owned state and enroll nodes through the same product mechanisms.",
+    "distribution_boundary": "Exclude private records, credentials and account bindings from public package defaults while retaining reusable capabilities.",
+    "current_package_split": "Private connections and customer previews are integration/distribution states, not separate products or feature tiers. Customer runtime connection remains unfinished.",
+    "required_verification": [
+      "two_independent_accounts_on_same_supported_build",
+      "same_feature_contract_with_each_accounts_own_resources",
+      "existing_account_history_and_fleet_preserved",
+      "new_account_and_normal_node_enrollment",
+      "unauthorized_cross_account_data_device_and_receipt_requests_refused",
+      "account_switch_and_membership_revocation_enforce_current_scope",
+      "restart_and_original_record_recovery_without_effect_replay"
+    ]
   }
 }
