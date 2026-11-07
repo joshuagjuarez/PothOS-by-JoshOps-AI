@@ -1,6 +1,13 @@
 # PothOS by JoshOps AI
 
-## Cognitive sovereignty. Continuity across change. Free. Always.
+## Free local AI infrastructure. Your own ArcheAgents. Human control.
+
+PothOS exists to make infrastructure for local AI freely available to people
+around the world, so they can build their own **ArcheAgents** and retain control
+over their knowledge, tools and digital lives. The purpose is human
+representation and cooperation across communities and countries.
+
+[Read the November 7 community announcement](docs/PRESS_RELEASE.md).
 
 PothOS is being developed so a human and their digital intelligence can carry
 meaningful work across infrastructure, platforms, software, devices and models

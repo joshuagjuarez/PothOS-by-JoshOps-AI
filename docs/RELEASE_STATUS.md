@@ -4,7 +4,8 @@ Updated November 7, 2026.
 
 | Deliverable | Status |
 | --- | --- |
-| This project README, mission and contribution documentation | Prepared in this repository |
+| This project README, mission and contribution documentation | Available in this public repository |
+| Community announcement: free local AI infrastructure and individual ArcheAgents | [Published November 7, 2026](PRESS_RELEASE.md) |
 | Public project home | [PothOS by JoshOps AI](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI) |
 | Repository visibility | Product and company index confirmed Public on November 6, 2026 |
 | Prospective runtime license | Scope and terms under review |

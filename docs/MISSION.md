@@ -1,4 +1,18 @@
-# Mission: carry meaning, reduce noise
+# Mission: free local AI infrastructure for people everywhere
+
+PothOS exists to help make infrastructure and local AI freely available so
+people can build their own ArcheAgents and exercise meaningful control over
+their digital lives. Each person should have representation, continuity and
+the ability to choose what their agents can know and do.
+
+Joshua will continue developing his own ArcheAgents while inviting others to
+build theirs on a shared foundation. The community effort is intended to take
+this work further than one person can take it alone, and to bring people
+together across communities, countries and the world.
+
+[Read the community announcement](PRESS_RELEASE.md).
+
+## Carry meaning, reduce noise
 
 PothOS is intended to provide continuity that preserves source, meaning,
 corrections and human authority.
