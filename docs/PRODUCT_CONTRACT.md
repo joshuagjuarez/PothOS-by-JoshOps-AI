@@ -24,6 +24,41 @@ uses their own identity, data, ArcheAgents and permitted connections.
 | Cognitive privacy | [Privacy](PRIVACY.md) |
 | Verified availability and remaining work | [Release status](RELEASE_STATUS.md) and [distribution](DISTRIBUTION.md) |
 
+## One feature set, account-specific state
+
+PothOS must provide every operator, including the project owner, the same feature
+set and account-security model. Founder status does not define a separate
+feature tier. A verified sign-in must open the operator's own permitted
+environment. An established account must retain its history, configured agents,
+registered fleet, roles and settings; a new account must establish its own state
+through the same product mechanisms.
+
+The existing identity and Membership owners must resolve a verified sign-in to
+the correct native principal, account/World memberships and permitted resources.
+An email string, role name or plugin title does not grant access. Discovery,
+work execution, credentials and receipt recovery must keep that derived scope.
+
+Biography, memory, corpus, legacy-work, agent configuration and node enrollment
+are reusable product capabilities. An operator's accumulated records, named
+agents, device registrations and granted permissions are that account's state.
+A public package excludes private records and bindings while retaining the
+reusable mechanisms. Updating or adopting the common product must preserve an
+existing operator's state and source lineage.
+
+Private account connections and customer-preview packages describe current
+integration and distribution states. They do not establish different products
+or authorize a reduced customer feature set. The current customer runtime
+connection is unfinished; written parity requirements do not establish that it
+is already working.
+
+Qualification must demonstrate two independently authenticated accounts on the
+same supported build: the same feature contract with each account's own
+configured resources; recovery of an existing account's history and fleet;
+normal enrollment of a new account and its nodes; refusal of unauthorized cross-account data,
+device and receipt requests; and correct scope after account switching,
+membership revocation and restart. Preserve original work and receipt identities
+without replaying completed effects.
+
 ## Product and operator commitments
 
 - **Official PothOS software is free of charge, always.** The direction includes
