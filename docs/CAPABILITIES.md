@@ -25,7 +25,7 @@ an installable public package.
 | Slicer inside the browser | No browser/WASM slicing implementation verified in this source audit | Do not advertise a browser slicer until an actual implementation is qualified |
 | Game/scene work | Existing scene, viewport and owned-game workflow components | Clear asset rights and separately package the supported tools |
 | General emulator | Not verified by this audit | Identify the actual emulator, system, source/license and demonstrated behavior before claiming support |
-| Voice and accessibility | Voice integration source and documented accessibility requirements | Physical device checks, recording controls, keyboard/screen-reader use and clear external-service disclosure |
+| Voice and accessibility | Voice integration source and documented accessibility requirements; the clean candidate's voice functions currently return unavailable | Connect and qualify the actual speech runtime/provider, then verify recording controls, physical devices, keyboard/screen-reader use and any external processing |
 | Multiple people in a business | Product direction and permission/tenant mechanisms under development | Independent user identities, explicit memberships, correct data separation and revoke/leave behavior |
 | Smart devices, API, MCP and SSH | Adapter-oriented architecture and selected integrations | Per-device/provider compatibility, authentication, permission and actual task evidence |
 
