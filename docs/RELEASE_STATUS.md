@@ -1,6 +1,6 @@
 # Release status
 
-Updated November 6, 2026.
+Updated November 7, 2026.
 
 | Deliverable | Status |
 | --- | --- |
@@ -9,6 +9,8 @@ Updated November 6, 2026.
 | Repository visibility | Product and company index confirmed Public on November 6, 2026 |
 | Prospective runtime license | Scope and terms under review |
 | Independently installable runtime source | Not released |
+| ArcheAgent profile, source-backed history and corpus | [Requirements documented](CONTINUING_ARCHEAGENTS.md); public runtime qualification remains required |
+| Daily legacy-work recovery and metacognitive review | Trigger, continuity and restart criteria documented; an always-on public service is not established |
 | Native voice mechanisms | Existing implementation; public packaging and physical device qualification remain separate |
 | Community-to-private-stack Help Desk relay | Not verified |
 | Robotics package | Not included |

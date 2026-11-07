@@ -44,6 +44,13 @@ private voice, memory or founder environment is included here.
 Read [mission and continuity](docs/MISSION.md) and
 [cognitive privacy](docs/PRIVACY.md).
 
+Continuity also requires an attributable past and a growing permitted corpus,
+not only the result of a single task. The
+[continuing ArcheAgent requirements](docs/CONTINUING_ARCHEAGENTS.md) connect the
+profile, source-backed history, daily recovery of earlier work and observable
+metacognitive review. They include qualification criteria for a recurring runtime;
+this documentation does not establish an always-on public service.
+
 ## Build with the community
 
 Local AI developers, accessibility contributors, technical writers and people

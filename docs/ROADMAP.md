@@ -7,11 +7,13 @@ contribution map, not a guarantee of release dates or completed implementation.
 | --- | --- | --- |
 | Current | Mission, clear project home and accurate license status | Readable repository entry and explicit public/private boundaries |
 | Current | Continuity and privacy review | Source-linked examples and concrete acceptance requirements |
+| Current | ArcheAgent profile, history and corpus | Attributed original events, corrections, assignments and explicit source coverage under the [continuity requirements](CONTINUING_ARCHEAGENTS.md) |
 | Current | Voice and accessibility | Bounded findings with device/build context and synthetic examples |
 | Before code publication | Prospective license and third-party rights | Exact approved terms and a path-level inventory |
 | Before code publication | Clean reusable source export | Reviewed files and dependencies, without private history or state |
 | Standalone beta | Independent local setup | Fresh installation without founder accounts or services |
 | Standalone beta | Memory continuity | Save, correct, restart and recover the same original record |
+| Standalone beta | Daily legacy work and metacognitive review | Recover the existing obligations without reissuing them; demonstrate the registered trigger, last-run/next-due state, limits and restart recovery |
 | Standalone beta | Permissions and network behavior | Observed isolation, denied unauthorized operations and explicit external choices |
 | After a working adapter | Ecosystem contributions | Reproducible integration instructions and relevant community review |
 | Separate proposal | Purpose Link applications | Separate participant custody, permissions and demonstrated usefulness |

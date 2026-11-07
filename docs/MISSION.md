@@ -38,6 +38,14 @@ An ArcheAgent can carry a user-chosen identity and responsibilities across
 supported sessions. Its name, role, current model and actual permissions are
 separate concerns. The person remains able to inspect, correct and stop work.
 
+That continuity includes the ArcheAgent's source-backed profile and history,
+its permitted corpus, and unfinished obligations from earlier days. Daily review
+must recover existing work and its actual state before proposing more. Observable
+metacognitive checks should revisit assumptions, evidence and outcomes through
+the existing runtime owners. The
+[continuing ArcheAgent requirements](CONTINUING_ARCHEAGENTS.md) describe these
+mechanisms and the evidence needed for a recurring service claim.
+
 These are product requirements, not a claim that every configuration is
 implemented or qualified today. The [release status](RELEASE_STATUS.md) and
 [roadmap](ROADMAP.md) identify the remaining work.
