@@ -1,5 +1,13 @@
 # PothOS by JoshOps AI
 
+**Founder and systems architect: Joshua David Gustafson-Juarez.**
+PothOS is Joshua's founder-led project under JoshOps AI, developed to support
+human agency, meaningful continuity and community access to local AI.
+Contributors retain credit for their own work. This attribution does not change
+any existing license, grant rights to private source or imply endorsement by
+an external AI provider. See [project governance](GOVERNANCE.md) and
+[license status](LICENSE_STATUS.md).
+
 ## Free local AI infrastructure. Your own ArcheAgents. Human control.
 
 **Open PothOS:** [Personal PothOS](https://pothos.joshops.ai) ·
