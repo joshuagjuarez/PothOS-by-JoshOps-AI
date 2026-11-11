@@ -16,7 +16,6 @@ contribution map, not a guarantee of release dates or completed implementation.
 | Standalone beta | Daily legacy work and metacognitive review | Recover the existing obligations without reissuing them; demonstrate the registered trigger, last-run/next-due state, limits and restart recovery |
 | Standalone beta | Permissions and network behavior | Observed isolation, denied unauthorized operations and explicit external choices |
 | After a working adapter | Ecosystem contributions | Reproducible integration instructions and relevant community review |
-| Separate proposal | Purpose Link applications | Separate participant custody, permissions and demonstrated usefulness |
 
 People may improve documentation and propose focused work now. Incomplete
 developer components can be useful once their rights, licensing and privacy

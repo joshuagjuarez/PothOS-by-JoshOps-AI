@@ -24,7 +24,7 @@ specific problem without collecting a person's inner life.
 - Treat role names and hierarchy positions as responsibilities, not access grants.
 - Make external processing visible and require a deliberate permitted choice.
 - Measure network destinations for a local configuration and test failure behavior.
-- Keep personal, family, organizational and Purpose Link records separately scoped.
+- Keep personal, family, organizational and community-project records separately scoped.
 
 Do not claim that local hosting alone proves security or confidentiality.
 

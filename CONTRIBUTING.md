@@ -30,7 +30,7 @@ or grant access to a private system.
 Do not include credentials, personal memory, embeddings, recordings, private
 configuration or another person's records. Use synthetic examples.
 
-### A contribution that Memex can carry forward
+### A contribution maintainers can carry forward
 
 Include the following in the existing issue or pull request:
 
@@ -41,14 +41,14 @@ Include the following in the existing issue or pull request:
 - Permission or privacy changes, migration steps and a concrete rollback route.
 - Contributor attribution and the result that would demonstrate completion.
 
-Memex's assigned role is to recover related work, coordinate review and verification,
+Maintainers recover related work, coordinate review and verification,
 and return the exact candidate to Joshua. Joshua approves official releases;
 existing publishing owners then sign, distribute and verify the result. Keep the
 approval and deployment receipts linked to the original contribution. An
 automated reply or successful CI run does not establish release completion.
 
-Use this repository's existing issue/PR routes. Public automatic intake into
-Memex is not certified by this guide; see current release status for verified
+Use this repository's existing issue/PR routes. Automatic contribution intake
+is not certified by this guide; see current release status for verified
 capabilities. Runtime source and its license remain pending, so the guide does
 not claim a downloadable source build is already available.
 

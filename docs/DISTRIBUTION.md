@@ -1,6 +1,6 @@
 # Getting PothOS: distribution paths
 
-Updated November 7, 2026. These are the release paths and their current standing.
+Updated November 11, 2026. These are the release paths and their current standing.
 The [product contract](PRODUCT_CONTRACT.md) defines the shared official entry
 and boundaries for every route below.
 
@@ -18,8 +18,8 @@ under the final applicable license.
 
 ## Current availability
 
-The public repository contains the announcement, requirements and contribution
-materials. The connection kit, a hosted app, a clean source candidate and a
+This repository contains the announcement, requirements and contribution
+materials. Its current visibility is recorded in [release status](RELEASE_STATUS.md). The connection kit, a hosted app, a clean source candidate and a
 standalone runtime are different deliverables. No independently installable
 PothOS runtime or signed native installer is supplied by this repository yet.
 

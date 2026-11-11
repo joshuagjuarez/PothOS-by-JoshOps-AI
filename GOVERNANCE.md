@@ -6,10 +6,11 @@ for official JoshOps AI / PothOS releases. Contributors are invited to challenge
 assumptions and improve the interface, workflows, adapters and infrastructure.
 The official software is intended to remain free of charge.
 
-Memex is the project's designated digital steward for recovering context,
-coordinating review and tests, and carrying approved work through the existing
-release owners. Joshua retains the final decision on official updates. A
-steward's recommendation, model answer or passing test is not release approval.
+Project maintainers use their own review tools to recover context, coordinate
+tests and carry approved work through the release process. Those private tools
+and personal profiles are not part of the distributed product. Joshua retains
+the final decision on official updates. A model answer or passing test is not
+release approval.
 
 ## Contributions and decisions
 
@@ -18,7 +19,7 @@ Anyone may report a problem or propose an improvement. Start with the
 Runtime contribution and license terms are still being defined.
 
 Keep proposals linked to their source issue and explain the intended behavior,
-verification and remaining limits. Memex coordinates attributable review and testing; Joshua approves the exact
+verification and remaining limits. Maintainers coordinate attributable review and testing; Joshua approves the exact
 candidate before its inclusion in an official release. Contributors retain credit for their work;
 participation does not by itself appoint a maintainer or grant repository access.
 
@@ -34,7 +35,7 @@ Public documentation, a prepared build and a verified downloadable release are
 different states. Current evidence is maintained in
 [release status](docs/RELEASE_STATUS.md).
 
-The required path is contribution → Memex review and verification → Joshua's
+The required path is contribution → maintainer review and verification → Joshua's
 approval of the exact candidate → signing and distribution → installed-result
 verification. Approval records must identify the source commit and release scope.
 A changed candidate requires approval that covers that change. Unknown upload
