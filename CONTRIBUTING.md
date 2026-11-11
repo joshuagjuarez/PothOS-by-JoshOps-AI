@@ -5,8 +5,10 @@ and [community principles](COMMUNITY_PRINCIPLES.md).
 
 ## Where to begin
 
-Use an issue to describe one concrete problem, its effect on a person and the
-smallest improvement that could be checked. Documentation, privacy requirements,
+Developers, vibe coders, designers, accessibility contributors and people testing
+real workflows are welcome worldwide. UI proposals, workflow cards, adapters and
+other augmentations should start with one concrete problem, its effect on a
+person and the smallest improvement that could be checked. Documentation, privacy requirements,
 accessibility feedback and reduced synthetic examples are useful now.
 
 Use **PothOS**, **JoshOps AI**, **ArcheAgent** and
@@ -28,7 +30,28 @@ or grant access to a private system.
 Do not include credentials, personal memory, embeddings, recordings, private
 configuration or another person's records. Use synthetic examples.
 
-The maintainer reviews official changes. A contribution does not automatically
-create a project role or endorsement. Response times and release dates depend on
+### A contribution that Memex can carry forward
+
+Include the following in the existing issue or pull request:
+
+- The original issue or work reference and the exact base/candidate commits.
+- The intended before-and-after behavior and affected platforms/components.
+- Reproduction steps, actual test results and known limits; use synthetic data.
+- Dependency, model or asset changes and their applicable licenses/notices.
+- Permission or privacy changes, migration steps and a concrete rollback route.
+- Contributor attribution and the result that would demonstrate completion.
+
+Memex's assigned role is to recover related work, coordinate review and verification,
+and return the exact candidate to Joshua. Joshua approves official releases;
+existing publishing owners then sign, distribute and verify the result. Keep the
+approval and deployment receipts linked to the original contribution. An
+automated reply or successful CI run does not establish release completion.
+
+Use this repository's existing issue/PR routes. Public automatic intake into
+Memex is not certified by this guide; see current release status for verified
+capabilities. Runtime source and its license remain pending, so the guide does
+not claim a downloadable source build is already available.
+
+A contribution does not automatically create a project role or endorsement. Response times and release dates depend on
 capacity. For private concerns contact [joshua@joshops.ai](mailto:joshua@joshops.ai).
 
