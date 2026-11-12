@@ -8,7 +8,7 @@ All packages are surfaces of the same JoshOps AI application. Your PothOS and Ar
 | Mac — Intel | Native 1.0.7 installation and running process verified | Existing package retained privately; recipient export and signing review pending |
 | Linux — Ubuntu x86_64 | Native package 1.0.0 verified on four computers | Existing installed package verified; recipient package promotion pending |
 | Windows — x86_64 | Master source includes Windows native transport | 1.0.8 NSIS build in private qualification |
-| Android — ARM64 | Master source includes Android plugins and account storage | 1.0.8 APK/AAB build in private qualification |
+| Android — ARM64 | Master source includes Android plugins and account storage | [1.0.8 APK/AAB built and hash-verified](https://github.com/joshuagjuarez/Memex-OS/actions/runs/43151840214/artifacts/13915061139); unsigned, private review |
 | iPhone / iPad | Native 1.0.7 installed on three physical devices | Existing installations retained; public iOS distribution remains paused |
 | ChatGPT / compatible MCP client | Current connection kit 0.3.1 downloaded and hash-verified | [Download connection kit](https://pothos.joshops.ai/downloads/pothos-connection-kit-0.3.1.zip) |
 

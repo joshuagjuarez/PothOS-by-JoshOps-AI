@@ -9,7 +9,8 @@ The [download manifest](release-artifacts.json) records each platform separately
 | Release work | Standing |
 | --- | --- |
 | Common master UI + native account source convergence | Staged in existing private source; frontend build and 61 targeted boundary tests passed |
-| Windows x86_64 installer / Android ARM64 APK and AAB | Private build qualification active; measured outputs replace these states when returned |
+| Windows x86_64 installer | Native installer compilation active |
+| Android ARM64 APK and AAB | 1.0.8 built; archive and both package hashes independently verified; unsigned private artifact, recipient acceptance pending |
 | Existing Mac/Linux/iOS installations | Verified, preserved |
 | ChatGPT connection kit 0.3.1 | Existing downloadable kit verified; 0.3.2 metadata correction staged separately |
 | Gemini / Muse | Same MCP contract; client-specific setup and acceptance recorded in [Connections](CONNECTIONS.md) |
