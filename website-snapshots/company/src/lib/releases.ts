@@ -161,3 +161,14 @@ export function nativeReleaseCopy(): string {
   ).join(" ");
 }
 export const DOWNLOAD_PATH = "/download";
+
+/** One device setup; package delivery and runtime capability stay distinct. */
+export const DEVICE_SETUP = "JoshOps AI is a local agentic computing environment: PothOS brings your ArcheAgent, memory, files, supported AI engines and workflows together. Start with a home computer, add your phone or tablet, and connect the assistants you use.";
+export const PLATFORM_ROLES: Record<PlatformId, string> = {
+  "mac-apple-silicon": "A local home for your workspace, supported models and ongoing workflows.",
+  "mac-intel": "A local home for your workspace and workflows on an Intel Mac.",
+  windows: "Connect your Windows workspace to your admitted JoshOps AI environment.",
+  linux: "A local AI workbench on Ubuntu, alongside the tools you already use.",
+  ios: "Your phone or tablet participates through its local workspace, supported engines and routing.",
+  android: "Bring your Android device into the same account-connected environment.",
+};

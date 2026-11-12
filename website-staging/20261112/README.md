@@ -1,3 +1,7 @@
+# Published correction
+
+The staged correction plus the footer-grid fix were applied to the existing company project and published. Selected source: b48a5879eff63322f9d8e5ba08c3af6ca5a7f678. Live HTML and CSS verified at https://joshops.ai/download. 175 tests passed; layouts checked at 1440/390/360. Total Lovable generation: 4.5 credits. [Evidence](../../website-snapshots/DOWNLOAD-CONSISTENCY-20261112.json). Do not replay this completed update.
+
 # Download-page consistency correction — November 12, 2026
 
 Source baseline: existing company Lovable project dcb0040c-0ff9-414e-8a48-abd69e6d9b79 at a5182bac6fb8c0b9fcde46bc03845a0330a34be0.

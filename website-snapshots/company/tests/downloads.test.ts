@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
-import { NATIVE_RELEASES, availableNativeReleases, nativeReleaseSummary, nativeReleaseCopy, releaseTarget, validateRelease, RELEASE_ACCESS_NOTE, RELEASE_DOWNLOAD_BASE, type PlatformRelease, type QualifiedRelease, type PreviewRelease } from "../src/lib/releases";
+import { NATIVE_RELEASES, availableNativeReleases, nativeReleaseSummary, nativeReleaseCopy, releaseTarget, validateRelease, RELEASE_ACCESS_NOTE, DEVICE_SETUP, RELEASE_DOWNLOAD_BASE, type PlatformRelease, type QualifiedRelease, type PreviewRelease } from "../src/lib/releases";
 import { PRERENDER_ROUTES } from "../src/lib/prerenderRoutes";
 import { FOOTER_GROUPS, PRIMARY_NAV } from "../src/lib/siteNav";
 import { searchSite } from "../src/lib/siteSearch";
@@ -48,11 +48,11 @@ describe("reviewed native previews", () => {
       expect(s.verifiedOn).toBe("2026-11-12");
     }
   });
-  test("four internal builds exist but have no distribution link", () => {
+  test("four enrolled-device builds offer device access, not a download", () => {
     for (const id of ["ios", "linux", "mac-apple-silicon", "mac-intel"] as const) {
       expect(entry(id).internalBuildVerified).toBe(true);
       expect(releaseTarget(entry(id))).toBeNull();
-      expect(nativeReleaseSummary().find((s) => s.platform === entry(id).name)?.status).toBe("Internal native build verified; distribution preparation pending");
+      expect(nativeReleaseSummary().find((s) => s.platform === entry(id).name)?.status).toBe(id === "ios" ? "Signed native app · device enrollment required" : "Native app running on enrolled devices. Request access for your device.");
     }
   });
   test("rejects foreign repositories, tags, artifacts and GitHub lookalikes", () => {
@@ -107,6 +107,9 @@ describe("download public parity", () => {
   test("crawler projections exactly match catalogue status and signature evidence", () => {
     for (const f of ["index.html", "public/llms.txt"]) expect(read(f)).toContain(nativeReleaseCopy());
   });
+  test("shared device setup is mirrored in crawler projections", () => {
+    for (const f of ["index.html", "public/llms.txt"]) expect(read(f)).toContain(DEVICE_SETUP);
+  });
   test("public tools report catalogue state and canonical account entry", () => {
     const services = (listServices as any).handler({}, {}).structuredContent.services[0];
     const eco = (getEcosystem as any).handler({}, {}).structuredContent;
@@ -115,8 +118,21 @@ describe("download public parity", () => {
     expect(eco.downloads.nativeApps).toEqual(nativeReleaseSummary());
     expect(eco.downloads.access).toBe(RELEASE_ACCESS_NOTE);
     expect(eco.downloads.application).toBe("JoshOps AI");
+    expect(eco.downloads.setup).toBe(DEVICE_SETUP);
   });
   test("preserves explicit optional shared-project consent", () => {
     expect(read("src/pages/Download.tsx")).toContain("Shared projects are optional. Review an offered pilot and choose Join before sending a shared message. Your private notes stay private.");
+  });
+});
+
+describe("public download wording (2026-11-12)", () => {
+  test("access note announces free public downloads", () => {
+    expect(RELEASE_ACCESS_NOTE).toBe("Free public downloads. Choose your device or connect your AI assistant.");
+  });
+  test("non-download devices link the public developer-participation form, never a store", () => {
+    const page = read("src/pages/Download.tsx");
+    expect(page).toContain("Request device access");
+    expect(page).not.toMatch(/Internal iOS build|distribution preparation pending|not fully customer-qualified|free developer preview/i);
+    expect(NATIVE_RELEASES.find((e) => e.id === "ios")?.source).toBe("iOS / iPadOS");
   });
 });

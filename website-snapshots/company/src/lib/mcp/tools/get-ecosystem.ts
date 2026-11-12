@@ -1,11 +1,12 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { CONNECTION_KIT, POTHOS_CONNECT_URL, PERSONAL_APP_URL, POTHOS_ACTIVATION, POTHOS_DEFINITION, POTHOS_FIRST_RELEASE, POTHOS_FREE_POLICY, POTHOS_PRICE_HEADLINE, POTHOS_PRIVACY_URL, POTHOS_RELEASE_STATUS, POTHOS_SEPARATE_COSTS, POTHOS_TAGLINE } from "../../personalApp";
-import { DOWNLOAD_PATH, nativeReleaseSummary, RELEASE_ACCESS_NOTE } from "../../releases";
+import { JOSHOPS_POSITIONING, JOSHOPS_GWS, POTHOS_USES, POTHOS_USES_NOTE, POTHOS_BUILD_WITH_US, POTHOS_BUILD_WITH_US_URL, POTHOS_DISCUSSIONS_URL, POTHOS_SUPPORT_PROJECT_URL, POTHOS_SECURITY_URL, CONNECTION_KIT, POTHOS_CONNECT_URL, PERSONAL_APP_URL, POTHOS_ACTIVATION, POTHOS_DEFINITION, POTHOS_FIRST_RELEASE, POTHOS_FREE_POLICY, POTHOS_PRICE_HEADLINE, POTHOS_PRIVACY_URL, POTHOS_RELEASE_STATUS, POTHOS_SEPARATE_COSTS, POTHOS_TAGLINE } from "../../personalApp";
+import { DOWNLOAD_PATH, nativeReleaseSummary, RELEASE_ACCESS_NOTE, DEVICE_SETUP } from "../../releases";
 
 const ecosystem = {
   company: {
     name: "JoshOps AI",
     summary: "A Houston-rooted software company and venture home.",
+    positioning: JOSHOPS_POSITIONING,
     website: "https://joshops.ai/",
   },
   product: {
@@ -13,6 +14,9 @@ const ecosystem = {
     summary: `${POTHOS_TAGLINE} ${POTHOS_DEFINITION}`,
     pricing: `${POTHOS_PRICE_HEADLINE} ${POTHOS_FREE_POLICY}`,
     release: POTHOS_RELEASE_STATUS,
+    uses: POTHOS_USES.map((u) => `${u.name}: ${u.text}`),
+    usesNote: `${POTHOS_USES_NOTE} ${JOSHOPS_GWS}`,
+    buildWithUs: { summary: POTHOS_BUILD_WITH_US, participate: POTHOS_BUILD_WITH_US_URL, discussions: POTHOS_DISCUSSIONS_URL, supportTheProject: POTHOS_SUPPORT_PROJECT_URL, security: POTHOS_SECURITY_URL },
     focus: "Your context, ready for what comes next: a continuing home for your ArcheAgent's memory, files and work across supported devices and connections, with permissions chosen by the user. The PothOS software is free.",
     separateCosts: POTHOS_SEPARATE_COSTS,
     activation: `${POTHOS_ACTIVATION} ${POTHOS_FIRST_RELEASE}`,
@@ -29,6 +33,7 @@ const ecosystem = {
     webApp: { url: PERSONAL_APP_URL, status: "Available now to invited testers (connected web beta; needs internet)", install: "https://pothos.joshops.ai/install", connect: "https://pothos.joshops.ai/connect" },
     application: "JoshOps AI",
     access: RELEASE_ACCESS_NOTE,
+    setup: DEVICE_SETUP,
     connectionKit: { ...CONNECTION_KIT, setup: POTHOS_CONNECT_URL },
     nativeApps: nativeReleaseSummary(),
   },

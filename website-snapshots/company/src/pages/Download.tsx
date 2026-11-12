@@ -7,7 +7,7 @@ import CatMark from "@/components/CatMark";
 import PothosPresenceArt from "@/components/pothos/PothosPresenceArt";
 import { PERSONAL_APP_URL, POTHOS_ACTIVATION, CONNECTION_KIT, POTHOS_CONNECT_URL, POTHOS_INSTALL_URL, JOSHOPS_POSITIONING, JOSHOPS_GWS, POTHOS_BUILD_WITH_US, POTHOS_BUILD_WITH_US_URL, POTHOS_DISCUSSIONS_URL, POTHOS_SUPPORT_PROJECT_URL, POTHOS_SECURITY_URL, POTHOS_LICENSE_STATUS_URL } from "@/lib/personalApp";
 import { CONTACT_PATH } from "@/lib/contact";
-import { DOWNLOAD_PATH, NATIVE_RELEASES, releaseTarget, signatureStatus, RELEASE_ACCESS_NOTE, RELEASE_ISSUES_URL, RELEASE_REPO_URL, RELEASE_TAG, RELEASE_EVIDENCE, DEVICE_ACCESS_URL, NATIVE_LABEL, INTERNAL_BUILD_STATUS, PREVIEW_STATUS, type PlatformId, type PlatformRelease } from "@/lib/releases";
+import { DOWNLOAD_PATH, NATIVE_RELEASES, releaseTarget, signatureStatus, RELEASE_ACCESS_NOTE, RELEASE_ISSUES_URL, RELEASE_REPO_URL, RELEASE_TAG, RELEASE_EVIDENCE, DEVICE_ACCESS_URL, DEVICE_SETUP, PLATFORM_ROLES, type PlatformId, type PlatformRelease } from "@/lib/releases";
 
 const ICONS: Record<PlatformId, LucideIcon> = {
   ios: TabletSmartphone, android: Smartphone, windows: Monitor,
@@ -21,38 +21,52 @@ function PlatformCard({ entry }: { entry: PlatformRelease }) {
   const Icon = ICONS[entry.id];
   const target = releaseTarget(entry);
   const release = entry.release;
+  const route = target
+    ? entry.channel === "app-store" ? "App Store" : entry.channel === "google-play" ? "Google Play" : "Direct download"
+    : "Device enrollment";
+  const status = target && release?.stage === "developer-preview"
+    ? signatureStatus(release)
+    : entry.enrollment?.status ?? (target ? "Published release" : "Native app on enrolled devices");
+  const action = target
+    ? entry.channel === "installer" ? entry.id === "android" ? "Download APK" : "Download for Windows" : ACTION[entry.channel]
+    : "Request device access";
   return (
     <li className="jo-dl-card jo-dl-platform">
-      <Icon className="jo-dl-icon" size={26} aria-hidden="true" />
-      <h3>{entry.name}</h3>
-      <p>{entry.source}</p>
-      <p className="jo-dl-label">{target ? PREVIEW_STATUS : NATIVE_LABEL}</p>
-      {target && release ? (
-        <>
-          <a className="jo-btn jo-btn-quiet jo-dl-action" href={target} rel="noopener">
-            {ACTION[entry.channel]} <span className="jo-dl-version">v{release.version}</span>
-          </a>
-          {release.stage === "developer-preview" && (
+      <div className="jo-dl-card-heading">
+        <Icon className="jo-dl-icon" size={26} aria-hidden="true" />
+        <div><h3>{entry.name}</h3><p>{entry.source}</p></div>
+      </div>
+      <p className="jo-dl-role">{PLATFORM_ROLES[entry.id]}</p>
+      <div className="jo-dl-card-state">
+        <p className="jo-dl-label">{route}{target && release ? ` · v${release.version}` : ""}</p>
+        <p className="jo-dl-signature">{status}</p>
+      </div>
+      <div className="jo-dl-card-footer">
+        <a className="jo-btn jo-btn-quiet jo-dl-action" href={target ?? DEVICE_ACCESS_URL} rel="noopener">
+          {action}<ArrowUpRight size={16} aria-hidden="true" />
+        </a>
+        <details className="jo-dl-checksum">
+          <summary>Installation details<span className="sr-only"> for {entry.name}</span></summary>
+          {target && release?.stage === "developer-preview" ? (
             <>
-              <span className="jo-badge jo-dl-signature">{signatureStatus(release)}</span>
-              <p>{release.bytes.toLocaleString("en-US")} bytes · Verified {release.verifiedOn} UTC</p>
-              <details className="jo-dl-checksum">
-                <summary>Checksum</summary>
-                <p>SHA-256: <code>{release.sha256}</code></p>
-              </details>
+              <p>Community release {RELEASE_TAG}. Downloaded from the official JoshOps AI GitHub repository.</p>
+              <p>{entry.id === "android"
+                ? "The APK is signed with the project's Android signing key. This is a direct installation, not a Google Play listing. Model weights are separate downloads."
+                : "This Windows installer has no Authenticode publisher signature. Windows may show an unrecognized-publisher warning. Check the file against the official checksum before installation."}</p>
+              <p>{(release.bytes / 1024 / 1024).toFixed(1)} MiB · Verified {release.verifiedOn} UTC</p>
+              <p>SHA-256: <code>{release.sha256}</code></p>
+              <a className="jo-link" href={release.evidence}>Release files and checksums</a>
+            </>
+          ) : target && release ? (
+            <a className="jo-link" href={release.evidence}>Release details</a>
+          ) : (
+            <>
+              <p>{entry.enrollment?.evidence ?? "Working native installations are verified. A public installer for new devices has not been published."}</p>
+              <p>Request testing access with your device and platform. A request does not automatically enroll a device.</p>
             </>
           )}
-        </>
-      ) : (
-        <>
-          {entry.enrollment && <span className="jo-badge jo-dl-signature">{entry.enrollment.status}</span>}
-          <p>{INTERNAL_BUILD_STATUS}</p>
-          <div className="jo-inline-links jo-dl-platform-actions">
-            <a className="jo-btn jo-btn-quiet" href={DEVICE_ACCESS_URL}>Request device access <ArrowUpRight size={16} aria-hidden="true" /></a>
-            <a className="jo-link" href={PERSONAL_APP_URL}>Open web app</a>
-          </div>
-        </>
-      )}
+        </details>
+      </div>
     </li>
   );
 }
@@ -71,18 +85,38 @@ export default function Download() {
           <p className="jo-page-lede">{JOSHOPS_POSITIONING}</p>
         </section>
         <div className="jo-page-body jo-dl">
+          <section className="jo-dl-section" aria-labelledby="setup-title">
+            <p className="jo-dl-label">Official downloads &amp; device access</p>
+            <h2 id="setup-title">Build around the devices you already own.</h2>
+            <p className="jo-dl-sub">{DEVICE_SETUP}</p>
+            <ol className="jo-dl-steps">
+              <li><h3>Choose your home computer</h3><p>A Mac, Windows or Linux computer can provide a continuing home for local files, supported models and workflows.</p></li>
+              <li><h3>Add your phone or tablet</h3><p>Bring your touch device into the same environment for capture, a local workspace and supported routing. Capable devices can also run supported local engines.</p></li>
+              <li><h3>Connect your assistant</h3><p>Use your own account and a supported plugin or MCP connection to reach your permitted tools and ongoing work.</p></li>
+            </ol>
+            <p>Choose a download or request device access below. Package contents, local-engine support and connection requirements are documented in the <a className="jo-link" href={`${RELEASE_REPO_URL}/blob/main/docs/DEVICE_SETUP.md`}>device setup guide</a>.</p>
+          </section>
           <section className="jo-dl-section" aria-labelledby="native-title">
-            <h2 id="native-title">Choose your device</h2>
-            <p className="jo-dl-sub">{RELEASE_ACCESS_NOTE}</p>
-            <p className="jo-dl-sub">One application. Your PothOS and ArcheAgent across your connected devices.</p>
-            <ul className="jo-dl-grid">
-              {NATIVE_RELEASES.map((entry) => <PlatformCard key={entry.id} entry={entry} />)}
+            <h2 id="native-title">Your home computer</h2>
+            <p className="jo-dl-sub">One JoshOps AI environment, with PothOS and your ArcheAgent inside. Your computer keeps its normal operating system.</p>
+            <ul className="jo-dl-grid jo-dl-computers">
+              {(["mac-apple-silicon", "mac-intel", "windows", "linux"] as const).map((id) => {
+                const entry = NATIVE_RELEASES.find((e) => e.id === id);
+                return entry ? <PlatformCard key={entry.id} entry={entry} /> : null;
+              })}
+            </ul>
+          </section>
+          <section className="jo-dl-section" aria-labelledby="touch-title">
+            <h2 id="touch-title">Your phone or tablet</h2>
+            <p className="jo-dl-sub">A participating device in your environment. The simple orb interface and the device's supported local capabilities are separate from the fuller interactive UI being developed.</p>
+            <ul className="jo-dl-grid jo-dl-touch">
+              {NATIVE_RELEASES.filter((entry) => entry.id === "ios" || entry.id === "android").map((entry) => <PlatformCard key={entry.id} entry={entry} />)}
             </ul>
           </section>
           <section className="jo-dl-web" aria-labelledby="web-title">
             <CatMark size={40} className="jo-dl-logo" />
             <div>
-              <h2 id="web-title">Open app / Connect your AI</h2>
+              <h2 id="web-title">Connect your AI assistant</h2>
               <p>Open your PothOS workspace with the tools available to your account. The connected web app needs internet. {JOSHOPS_GWS}</p>
               <p>{POTHOS_ACTIVATION} <Link className="jo-link" to={CONTACT_PATH}>Request invitation</Link></p>
             </div>
@@ -112,6 +146,7 @@ export default function Download() {
           <section className="jo-dl-section" aria-labelledby="build-title">
             <h2 id="build-title">Build with us</h2>
             <p>{POTHOS_BUILD_WITH_US}</p>
+            <p>Developers, creators, community groups and research labs can help with interfaces, adapters, local models and useful workflows. Discuss custom deployment, model evaluation or fine-tuning, workshops and infrastructure partnerships through <a className="jo-link" href={POTHOS_SUPPORT_PROJECT_URL}>project support</a>. Scope and availability are agreed individually; the software remains free.</p>
             <p className="jo-inline-links">
               <a className="jo-btn jo-btn-quiet" href={POTHOS_BUILD_WITH_US_URL}>Build with us <ArrowUpRight size={16} aria-hidden="true" /></a>
               <a className="jo-link" href={POTHOS_DISCUSSIONS_URL}>Discussions <ArrowUpRight size={16} aria-hidden="true" /></a>
