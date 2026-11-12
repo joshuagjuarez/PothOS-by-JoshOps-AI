@@ -25,6 +25,22 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: home_computer
+    attributes:
+      label: Home computer or workbench
+      multiple: true
+      options: [Mac Apple silicon, Mac Intel, Windows x64, Ubuntu or Linux x86_64, Shared lab or team computer, No computer yet]
+    validations:
+      required: true
+  - type: dropdown
+    id: touch_device
+    attributes:
+      label: Phone or tablet
+      multiple: true
+      options: [iPhone, iPad, Android ARM64, Other device, No touch device]
+    validations:
+      required: true
+  - type: dropdown
     id: contribution
     attributes:
       label: Areas of contribution

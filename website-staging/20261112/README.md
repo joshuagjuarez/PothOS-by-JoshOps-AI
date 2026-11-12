@@ -1,12 +1,16 @@
-# Prepared download-page update — November 12
+# Download-page consistency correction — November 12, 2026
 
-Product: JoshOps AI, with PothOS and a person's ArcheAgent inside. This batch preserves the existing site design and application doorway.
+Source baseline: existing company Lovable project dcb0040c-0ff9-414e-8a48-abd69e6d9b79 at a5182bac6fb8c0b9fcde46bc03845a0330a34be0.
 
-The adjacent company files are staged against Lovable company commit 74cd769f29e89ab8b0e111a2c13cd5d13c5e6fd8. They are source candidates, not a live deployment or proof of Git sync.
+These are prepared corrections for the existing site, not another application. The company page currently has unequal content branches for direct downloads and enrolled-device access. This correction uses one card structure and aligned actions, groups home computers and touch devices, and explains the same JoshOps AI environment.
 
-Changes: public access notice; consistent Community beta / Native app · testing access labels; platform architecture names; uniform native-testing action; a concise phone-node explanation; existing public device/engine documentation; optional sponsorship contact. All existing package URLs, hashes, signature facts and release validation remain unchanged.
+- Replace company src/pages/Download.tsx with the staged file.
+- Replace company src/lib/releases.ts with the staged file. Existing targets, versions, hashes, signing evidence and validators remain unchanged; shared device-setup copy and roles are added.
+- Append company/src/styles/download-consistency.css to the existing src/styles/company.css. This file is a scoped CSS addition, not a new separately loaded stylesheet.
+- Mirror DEVICE_SETUP verbatim into the existing download descriptions in index.html and public/llms.txt, and the existing public-info projection as applicable.
+- Preserve the original logo, orb/halos, navigation, auth, free-software policy and all existing route/asset guards.
+- Run the existing tests and production build. Review the diff and confirm live route delivery before marking deployed.
 
-One prepared Lovable update:
-“Apply this staged two-file download-page correction in the existing company project. Keep its visual design, routes, authentication, app doorway and artifact validation. Use the public repository's website-staging/20261112/company files after verifying their base against the current project. Update affected text assertions and crawler projections. Run the existing download tests. Do not redesign the app, add dependencies, change prices, claim store approval, invent download links, alter package signatures or change repository visibility. Report changed files, test results and the exact commit.”
+Source staging and website deployment are separate. GitHub two-way synchronization remains unverified. This source checkpoint provides exact reviewable custody without claiming automatic sync. No store listing, model weights or runtime installation is created by this layout correction.
 
-Git sync between this Lovable project and a repository has not been verified through the available API. The retained snapshots and this batch are not two-way sync. Joshua's standing direction is to establish that connection before spending more generation credits. No Lovable generation or publication was invoked for this batch.
+The linked public guides and developer intake are updated in the same repository. Original source snapshots retain their dates until deployment readback replaces them.

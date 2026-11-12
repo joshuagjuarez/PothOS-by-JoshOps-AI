@@ -18,6 +18,12 @@ We welcome individual and organizational support, donated test hardware, compute
 
 GitHub Sponsors payment enrollment is being completed. This page currently accepts proposals, not payments. The repository Sponsor button opens this page; it must not be mistaken for an active checkout. Once GitHub verifies the account and payout setup, the official payment destination will be linked here. Sponsorship does not promise equity, financial returns, preferential access to private data or guaranteed delivery dates.
 
+## Custom work and research partnerships
+
+We welcome proposals for scoped deployment and integration work, custom workflows and adapters, model evaluation or fine-tuning, training and workshops, and collaborations with research or education labs. These are conversations about separately agreed services and deliverables; they do not introduce a software license fee. Feasibility, rights to data/models, costs, scope and acceptance are agreed for each engagement.
+
+Use the [company contact page](https://joshops.ai/support#contact) for private commercial, strategic partnership or investment discussions. No equity, price, financial return or acquisition terms are offered by this page. Public sponsorship requests can remain in Discussions.
+
 ## Build together
 
 Personal, Entrepreneur, Enterprise and Developer are ways to use one environment. Contributors can improve the adapters and workflows they use without receiving the Founder's accounts, private corpus or device credentials. Google Workspace integration uses each participant's authorized accounts. Further provider adapters are developed and verified individually.

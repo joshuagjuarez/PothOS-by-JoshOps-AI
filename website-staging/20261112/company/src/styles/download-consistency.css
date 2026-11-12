@@ -1,0 +1,22 @@
+
+/* Shared structure for every platform; availability changes content, not layout. */
+.jo-dl-card.jo-dl-platform {
+  display: flex; flex-direction: column; align-items: stretch;
+  padding: 24px; gap: 20px; min-width: 0;
+}
+.jo-dl-card-heading { display: flex; align-items: flex-start; gap: 14px; }
+.jo-dl-card-heading .jo-dl-icon { flex: 0 0 auto; margin-top: 2px; }
+.jo-dl-card-heading h3 { min-height: 2.6em; }
+.jo-dl-card-heading p { margin-top: 6px; }
+.jo-dl-platform .jo-dl-role { min-height: 4.8em; }
+.jo-dl-card-state { display: grid; gap: 6px; min-height: 5em; }
+.jo-dl-platform .jo-dl-signature { font-size: 13px; line-height: 1.5; }
+.jo-dl-card-footer { display: grid; gap: 8px; margin-top: auto; }
+.jo-dl-platform .jo-dl-action { display: flex; width: 100%; min-height: 44px; justify-content: center; }
+.jo-dl-card-footer .jo-dl-checksum { border-top: 1px solid hsl(var(--border)); padding-top: 4px; }
+.jo-dl-card-footer .jo-dl-checksum p { margin-top: 8px; font-size: 13px; }
+.jo-dl-card-footer .jo-dl-checksum a { display: inline-block; margin-top: 12px; }
+@media (min-width: 768px) {
+  .jo-dl-computers, .jo-dl-touch { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .jo-dl-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

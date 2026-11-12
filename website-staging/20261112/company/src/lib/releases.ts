@@ -7,10 +7,12 @@ export const RELEASE_REPO_URL = "https://github.com/joshuagjuarez/PothOS-by-Josh
 export const RELEASE_TAG = "v1.0.8-beta.1";
 export const RELEASE_EVIDENCE = `${RELEASE_REPO_URL}/releases/tag/${RELEASE_TAG}`;
 export const RELEASE_DOWNLOAD_BASE = `${RELEASE_REPO_URL}/releases/download/${RELEASE_TAG}/`;
-export const RELEASE_ACCESS_NOTE = "Public downloads · Free software. Use your own account and devices.";
+export const RELEASE_ACCESS_NOTE = "Free public downloads. Choose your device or connect your AI assistant.";
+export const DEVICE_ACCESS_URL = `${RELEASE_REPO_URL}/issues/new?template=developer-participation.yml`;
 export const RELEASE_ISSUES_URL = `${RELEASE_REPO_URL}/issues/new/choose`;
-export const INTERNAL_BUILD_STATUS = "Native app · testing access";
-export const PREVIEW_STATUS = "Community beta";
+export const INTERNAL_BUILD_STATUS = "Native app running on enrolled devices. Request access for your device.";
+export const NATIVE_LABEL = "Native application";
+export const PREVIEW_STATUS = "Download available";
 
 export interface QualifiedRelease {
   target: string;
@@ -37,11 +39,13 @@ export interface PlatformRelease {
   source: string;
   channel: ReleaseChannel;
   internalBuildVerified?: boolean;
+  /** Platform-specific enrolled-device status and evidence, when reviewed. */
+  enrollment?: { status: string; evidence: string };
   release: QualifiedRelease | PreviewRelease | null;
 }
 
 export const NATIVE_RELEASES: readonly PlatformRelease[] = [
-  { id: "ios", name: "iPhone and iPad", source: "iOS · iPadOS", channel: "app-store", internalBuildVerified: true, release: null },
+  { id: "ios", name: "iPhone and iPad", source: "iOS / iPadOS", channel: "app-store", internalBuildVerified: true, enrollment: { status: "Signed native app · device enrollment required", evidence: "Signed v1.0.7 (build 20261112125225) verified on three enrolled devices. Not distributed through the App Store." }, release: null },
   { id: "android", name: "Android", source: "ARM64 · Direct APK", channel: "installer", release: {
     stage: "developer-preview", target: `${RELEASE_DOWNLOAD_BASE}JoshOps-AI-1.0.8-android-arm64.apk`, version: "1.0.8",
     verifiedOn: "2026-11-12", evidence: RELEASE_EVIDENCE, bytes: 172263845,
@@ -52,7 +56,7 @@ export const NATIVE_RELEASES: readonly PlatformRelease[] = [
     verifiedOn: "2026-11-12", evidence: RELEASE_EVIDENCE, bytes: 7777933,
     sha256: "d0676fc5bf382355dc09fe0814ccd4af64ac2243b3ad0705ca4afb686ca03adb", signature: "unsigned",
   } },
-  { id: "linux", name: "Linux", source: "Ubuntu · x86_64", channel: "installer", internalBuildVerified: true, release: null },
+  { id: "linux", name: "Linux", source: "Ubuntu / Linux x86_64", channel: "installer", internalBuildVerified: true, release: null },
   { id: "mac-apple-silicon", name: "Mac with Apple silicon", source: "macOS · Apple silicon", channel: "installer", internalBuildVerified: true, release: null },
   { id: "mac-intel", name: "Mac with Intel", source: "macOS · Intel", channel: "installer", internalBuildVerified: true, release: null },
 ];
@@ -143,7 +147,7 @@ export function nativeReleaseSummary() {
     const r = entry.release;
     return {
       application: "JoshOps AI", platform: entry.name, source: entry.source,
-      status: target ? r?.stage === "developer-preview" ? PREVIEW_STATUS : "Customer-qualified release" : entry.internalBuildVerified ? INTERNAL_BUILD_STATUS : "Distribution preparation pending",
+      status: target ? r?.stage === "developer-preview" ? PREVIEW_STATUS : "Customer-qualified release" : entry.enrollment?.status ?? INTERNAL_BUILD_STATUS,
       ...(target && r ? { url: target, version: r.version, evidence: r.evidence,
         ...(r.stage === "developer-preview" ? { verifiedOn: r.verifiedOn, bytes: r.bytes, sha256: r.sha256, signature: signatureStatus(r), access: RELEASE_ACCESS_NOTE, customerQualified: false } : { customerQualified: true, qualifiedOn: r.qualifiedOn }),
       } : {}),
@@ -152,8 +156,19 @@ export function nativeReleaseSummary() {
 }
 /** Static crawler projections are generated from this same catalogue. */
 export function nativeReleaseCopy(): string {
-  return `Download JoshOps AI. Your PothOS. Your ArcheAgent. ${RELEASE_ACCESS_NOTE} ` + nativeReleaseSummary().map((r) =>
-    `${r.platform}: ${r.status}. ${"verifiedOn" in r ? `v${r.version}; ${r.bytes} bytes; ${r.signature}; verified ${r.verifiedOn} UTC; SHA-256 ${r.sha256}; ${r.url}. Developer-preview verification is not full customer qualification.` : "url" in r ? `v${r.version}; qualified ${r.qualifiedOn}; ${r.url}.` : "Open web app or request testing access."}`
+  return `Download JoshOps AI. ${RELEASE_ACCESS_NOTE} ` + nativeReleaseSummary().map((r) =>
+    `${r.platform}: ${r.status}. ${"verifiedOn" in r ? `v${r.version}; ${r.bytes} bytes; ${r.signature}; verified ${r.verifiedOn} UTC; SHA-256 ${r.sha256}; ${r.url}.` : "url" in r ? `v${r.version}; qualified ${r.qualifiedOn}; ${r.url}.` : `Request device access: ${DEVICE_ACCESS_URL}. Open web app.`}`
   ).join(" ");
 }
 export const DOWNLOAD_PATH = "/download";
+
+/** One device setup; package delivery and runtime capability stay distinct. */
+export const DEVICE_SETUP = "JoshOps AI is a local agentic computing environment: PothOS brings your ArcheAgent, memory, files, supported AI engines and workflows together. Start with a home computer, add your phone or tablet, and connect the assistants you use.";
+export const PLATFORM_ROLES: Record<PlatformId, string> = {
+  "mac-apple-silicon": "A local home for your workspace, supported models and ongoing workflows.",
+  "mac-intel": "A local home for your workspace and workflows on an Intel Mac.",
+  windows: "Connect your Windows workspace to your admitted JoshOps AI environment.",
+  linux: "A local AI workbench on Ubuntu, alongside the tools you already use.",
+  ios: "Your phone or tablet participates through its local workspace, supported engines and routing.",
+  android: "Bring your Android device into the same account-connected environment.",
+};

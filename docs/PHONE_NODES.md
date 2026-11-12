@@ -8,7 +8,11 @@ The iOS master contains a native Apple Foundation adapter using `SystemLanguageM
 
 The November 12 source repair moves phone relays above presentation views so opening the orb, workbench or coworker overlay does not unmount them. It uses the existing orb and halos for a simple PothOS home, and checks local Foundation readiness independently of the network. Native TypeScript and two lifecycle regression tests passed. The corrected iOS master was signed and installed on the maintainer's enrolled iPhone. Independent device readback matches signed build 20261112073914, bundle ai.joshops.app. Cross-device plugin delivery remains a separate test.
 
-The current Founder plugin-to-phone path still has a measured dependency: its registered shared backend cannot start because its Tailscale account proof is unavailable. Phone installation, local engine availability and cross-device routing are separate observations. Repair of that connection is tracked under the existing release work; no working remote phone session is claimed here.
+The shared backend now preserves local diagnostics during a provider-ownership proof failure. Tailscale credential binding and end-to-end plugin-to-phone delivery remain separate acceptance work. Phone installation, local engine availability, source custody and cross-device execution are separate observations; diagnostic recovery is not a completed remote phone session.
+
+The later signed build 20261112125225 was installed and independently read back on three enrolled touch devices. It adds the Siri/Shortcuts capture adapter and retains the orb entry. Live Siri activation and phone-to-fleet handoff acceptance remain separate checks.
+
+[Choose your home-computer and touch-device setup](DEVICE_SETUP.md).
 
 ## Apple devices
 
