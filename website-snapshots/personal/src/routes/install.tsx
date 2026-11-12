@@ -1,11 +1,12 @@
 import smileLogo from "@/assets/joshops-ai-logo.png.asset.json";
+import { SUPPORT_URL, DISCUSSIONS_URL, SECURITY_REPORT_URL } from "@/lib/softwarePolicy";
 import { CONNECTION_KIT } from "@/lib/mcpConnection";
 import { createInstallController, installStatus, type InstallOutcome, type InstallState } from "@/lib/installPrompt";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 
 const TITLE = "Install JoshOps AI | Your PothOS and ArcheAgent";
-const DESCRIPTION = "Add the JoshOps AI web app to your phone, tablet or computer and open it like an app.";
+const DESCRIPTION = "Download JoshOps AI for your device or add the connected web app, then connect your authorized AI assistants.";
 const PAGE_URL = "https://pothos.joshops.ai/install";
 
 export const Route = createFileRoute("/install")({
@@ -83,6 +84,8 @@ function InstallPage() {
             Open JoshOps AI
           </Link>
           <Link to="/auth">Sign in</Link>
+          <Link to="/connect">Connect your AI</Link>
+          <a href="https://joshops.ai/download">Download for your device</a>
           {st.available && (
             <button type="button" onClick={install} disabled={st.busy}>
               {st.busy ? "Installing…" : "Install JoshOps AI"}
@@ -105,17 +108,17 @@ function InstallPage() {
         ))}
 
         <section>
-          <h2>Download apps</h2>
+          <h2>Download for your device</h2>
           <p>
-            <a href="https://joshops.ai/download">Download apps</a> from the official JoshOps AI download page,
-            with current packages and the connection kit.
+            <a href="https://joshops.ai/download">Download for your device</a> from the official JoshOps AI download page,
+            with public Windows x64 and signed Android ARM64 packages, plus connection tools.
           </p>
         </section>
 
         <section>
           <h2>Next</h2>
           <p>
-            After accepting your invitation, you can <Link to="/connect">connect PothOS to your AI assistant</Link>.
+            After accepting your invitation, you can <Link to="/connect">Connect your AI</Link>.
             Setting up another assistant by hand? The{" "}
             <a href={CONNECTION_KIT.href} download={CONNECTION_KIT.filename}>
               connection kit (ZIP, {CONNECTION_KIT.sizeLabel})
@@ -123,7 +126,7 @@ function InstallPage() {
             has the plugin files and example settings. It isn't an app installer or a self-contained runtime.
           </p>
           <p>
-            <Link to="/privacy">Privacy and service</Link> · <Link to="/terms">Beta terms</Link> · <a href="mailto:joshua@joshops.ai">Support</a> · <a href="https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI">Product repository</a>
+            <Link to="/privacy">Privacy and service</Link> · <Link to="/terms">Beta terms</Link> · <a href={SUPPORT_URL}>Support</a> · <a href={DISCUSSIONS_URL}>Discussions</a> · <a href={SECURITY_REPORT_URL}>Report a security issue</a> · <a href="https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI">Product repository</a>
           </p>
         </section>
       </main>

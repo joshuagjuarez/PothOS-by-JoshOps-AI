@@ -1,11 +1,11 @@
 import smileLogo from "@/assets/joshops-ai-logo.png.asset.json";
-import { SOFTWARE_POLICY } from "@/lib/softwarePolicy";
+import { SOFTWARE_POLICY, SUPPORT_URL, DISCUSSIONS_URL, SECURITY_REPORT_URL, DEVELOPER_PARTICIPATION_URL, PROJECT_SUPPORT_URL } from "@/lib/softwarePolicy";
 import { CONNECTION_KIT, GEMINI_DEV_MODE, MUSE_CONNECTOR, FIRST_TEST_PROMPT, MCP_HOST_DOCS as HOSTS, MCP_SERVER_DISPLAY_URL } from "@/lib/mcpConnection";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 
-const TITLE = "Connect your AI assistant | PothOS by JoshOps AI";
-const DESCRIPTION = "Connect ChatGPT or another MCP host to your own PothOS account.";
+const TITLE = "Connect your AI | JoshOps AI";
+const DESCRIPTION = "Connect ChatGPT or Gemini CLI to your own PothOS inside JoshOps AI using authenticated MCP.";
 const PAGE_URL = "https://pothos.joshops.ai/connect";
 
 export const Route = createFileRoute("/connect")({
@@ -58,12 +58,13 @@ function ConnectPage() {
       <main className="pw-legal">
         <Link to="/" className="pw-legal-brand">
           <img src={smileLogo.url} alt="" className="h-6 w-6" />
-          PothOS · by JoshOps AI
+          JoshOps AI
         </Link>
-        <h1>Connect your AI assistant</h1>
+        <h1>Connect your AI</h1>
         <p>
           Do this after you've accepted your invitation. Use your own account. What you can reach depends on what's
-          available to your account and workspace.
+          available to your account and workspace. Remote assistants need an authenticated, reachable MCP endpoint,
+          not a separate marketing website for each model. Local CLI clients may use supported local transports.
         </p>
 
         <section>
@@ -90,43 +91,16 @@ function ConnectPage() {
         </section>
 
         <section>
-          <h2>Gemini Apps (web)</h2>
+          <h2>Gemini CLI</h2>
+          <p>Verified connection path. In your terminal, add the HTTPS MCP server:</p>
+          <code>gemini mcp add --transport http pothos {MCP_SERVER_DISPLAY_URL}</code>
           <ol>
-            <li>
-              In Gemini, open Settings, then{" "}
-              <a href={GEMINI_DEV_MODE.settingsHref} target="_blank" rel="noreferrer">
-                Gemini Apps Developer Mode
-              </a>
-              .
-            </li>
-            <li>Choose an app, then Create new.</li>
-            <li>Enter the server address above.</li>
-            <li>Sign in when asked, using the same account that accepted your invitation.</li>
-            <li>Check that the PothOS tools appear.</li>
-            <li>Send the first test prompt below to save and read back the same private note.</li>
+            <li>Start Gemini CLI with <code>gemini</code>.</li>
+            <li>Run <code>/mcp auth pothos</code> and complete OAuth with your own invited PothOS account.</li>
+            <li>Run <code>/mcp</code> to check the connection and tools, then send the first test prompt below.</li>
           </ol>
-          <p>
-            If Gemini already shows a PothOS connected app for your account, use it and check that its tools appear.
-            Not every Google account has these controls, and Google decides which tools are exposed. Connecting through
-            Gemini CLI has been completed; Gemini on the web and mobile hasn't yet been confirmed with a tester.{" "}
-            <a href={GEMINI_DEV_MODE.docsHref} target="_blank" rel="noreferrer">
-              Google's guide
-            </a>
-          </p>
-        </section>
-
-        <section>
-          <h2>Muse (Bodhi)</h2>
-          <p>
-            <strong>{MUSE_CONNECTOR.status}</strong>
-          </p>
-          <p>
-            Muse lists connectors in its directory only after reviewing their function, security and legal
-            requirements. PothOS submission and an approved Muse listing have not yet been verified. Follow the connection options shown in your own Muse account.{" "}
-            <a href={MUSE_CONNECTOR.platformHref} target="_blank" rel="noreferrer">
-              Muse platform
-            </a>
-          </p>
+          <p><a href="https://geminicli.com/docs/tools/mcp-server/">Official Gemini CLI MCP guide</a>.
+            Local clients can also use supported stdio transports; follow your installed runtime's documentation.</p>
         </section>
 
         <section>
@@ -141,7 +115,7 @@ function ConnectPage() {
         <details>
           <summary>Phone, computer or team setup</summary>
           <p>
-            <strong>Phone or tablet:</strong> add PothOS from the <Link to="/install">install page</Link> and connect your
+            <strong>Phone or tablet:</strong> add JoshOps AI from the <Link to="/install">install page</Link> and connect your
             assistant's app with your own login.
           </p>
           <p>
@@ -180,16 +154,21 @@ function ConnectPage() {
             </a>
           </p>
           <p className="pw-act-fine">
-            Version {CONNECTION_KIT.version}. SHA-256 <code style={{ wordBreak: "break-all" }}>{CONNECTION_KIT.sha256}</code> (
-            <a href={CONNECTION_KIT.checksumHref} download>
-              checksum file
-            </a>
-            ).
+            Version {CONNECTION_KIT.version}. SHA-256 <code style={{ wordBreak: "break-all" }}>{CONNECTION_KIT.sha256}</code>.
           </p>
         </section>
 
         <section>
-          <h2>Compatible MCP hosts</h2>
+          <h2>More adapters</h2>
+          <p>Additional integrations are contributor work, not verified connections.</p>
+          <p>Gemini Apps (web): <a href={GEMINI_DEV_MODE.settingsHref}>Developer Mode</a>,
+            Choose an app, then Create new. Use the server address above and your own invited account.
+            Host availability and account policies apply; web and mobile recipient testing remains unverified.
+            <a href={GEMINI_DEV_MODE.docsHref}> Google's guide</a>.</p>
+          <p>Muse (Bodhi): <strong>{MUSE_CONNECTOR.status}</strong>.
+            Muse reviews functionality, security and legal requirements before directory listing.
+            PothOS submission and an approved Muse listing have not yet been verified. Follow the connection options shown in your own Muse account.
+            <a href={MUSE_CONNECTOR.platformHref}> Muse platform</a>. Meta and other adapters also need live verification.</p>
           <p>Other hosts that support remote MCP servers with sign-in may also work. Their own guides:</p>
           <ul>
             {HOSTS.map((h) => (
@@ -203,8 +182,10 @@ function ConnectPage() {
         </section>
 
         <p>
-          <a href="https://joshops.ai/download">Download apps</a> · <Link to="/install">Install web app</Link> · <Link to="/app">Open JoshOps AI</Link> ·{" "}
-          <Link to="/privacy">Privacy and service</Link> · <Link to="/terms">Beta terms</Link> · <a href="mailto:joshua@joshops.ai">Support</a>
+          <a href="https://joshops.ai/download">Download for your device</a> · <Link to="/install">Install web app</Link> · <Link to="/app">Open JoshOps AI</Link> ·{" "}
+          <Link to="/privacy">Privacy and service</Link> · <Link to="/terms">Beta terms</Link> · <a href={SUPPORT_URL}>Support</a> · <a href={DISCUSSIONS_URL}>Discussions</a> · <a href={SECURITY_REPORT_URL}>Report a security issue</a>
+        </p>
+        <p><a href={DEVELOPER_PARTICIPATION_URL}>Build with us</a> · <a href={PROJECT_SUPPORT_URL}>Support the project</a>. Optional sponsorship is unrelated to software access.
         </p>
       </main>
     </div>

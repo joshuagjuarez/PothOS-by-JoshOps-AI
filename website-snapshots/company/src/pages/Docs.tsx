@@ -126,8 +126,7 @@ export default function Docs() {
             ))}
           </ul>
           <p>
-            Choose your device on <Link to="/download">Downloads</Link>. The connected web beta is available now to invited testers; native apps appear
-            there as each release becomes available.
+            Choose your device on <Link to="/download">Downloads</Link>. Free public downloads are available for Android and Windows; other native apps run on enrolled devices, and you can request access for yours.
           </p>
           <p>
             Where a host is enrolled, local foundation models such as Nemotron or Apple Foundation Models can be
