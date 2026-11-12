@@ -20,3 +20,7 @@
   .jo-dl-computers, .jo-dl-touch { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .jo-dl-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* Neutralize the older download row's column assignment inside the shared footer. */
+.jo-dl-card-footer { grid-template-columns: minmax(0, 1fr); }
+.jo-dl-card-footer > * { grid-column: 1 / -1; grid-row: auto; min-width: 0; }
