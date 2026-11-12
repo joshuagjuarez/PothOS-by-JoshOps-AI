@@ -1,0 +1,74 @@
+{
+  "schema": "joshops.release-artifacts.v1",
+  "product": "JoshOps AI",
+  "updated": "2026-11-11",
+  "repository_visibility": "private",
+  "official_public_release": false,
+  "website_publish_ready": false,
+  "platforms": [
+    {
+      "id": "macos-arm64",
+      "label": "Mac Apple Silicon",
+      "version": "1.0.7",
+      "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "macos-x64",
+      "label": "Mac Intel",
+      "version": "1.0.7",
+      "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "linux-x64",
+      "label": "Linux Ubuntu x86_64",
+      "version": "1.0.0",
+      "status": "INSTALLATION_VERIFIED_RECIPIENT_EXPORT_PENDING",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "windows-x64",
+      "label": "Windows x86_64",
+      "version": "1.0.8",
+      "status": "PRIVATE_BUILD_QUALIFICATION",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "android-arm64",
+      "label": "Android ARM64",
+      "version": "1.0.8",
+      "status": "PRIVATE_BUILD_QUALIFICATION",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "ios-ipados",
+      "label": "iPhone / iPad",
+      "version": "1.0.7",
+      "status": "INSTALLED_PUBLIC_DISTRIBUTION_PAUSED",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "mcp-kit",
+      "label": "ChatGPT / MCP connection kit",
+      "version": "0.3.1",
+      "status": "DOWNLOAD_BYTES_VERIFIED",
+      "public_download_url": "https://pothos.joshops.ai/downloads/pothos-connection-kit-0.3.1.zip",
+      "sha256": "4791294ac2e14fa6f325bf4af976912c1fdd80cc93133631dd6e90af60699dd1",
+      "signature_verified": false,
+      "bytes": 30759
+    }
+  ]
+}

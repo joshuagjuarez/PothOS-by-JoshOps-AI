@@ -1,4 +1,6 @@
-# Contributing to PothOS
+# Contribute to JoshOps AI
+
+Start with the [developer participation form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml). Maintainers link accepted work, role assignments, implementation and verification to that existing issue. Keep proposed changes private while this release is staged. Official updates require review and approval; contributed code is not installed automatically.
 
 Start with [the mission](docs/MISSION.md), [license status](LICENSE_STATUS.md)
 and [community principles](COMMUNITY_PRINCIPLES.md).

@@ -1,55 +1,24 @@
 # Release status
 
-Updated November 11, 2026. The [product contract](PRODUCT_CONTRACT.md) defines the
-official entry, operator boundary and release ownership; this page records what
-is available or still needs qualification.
+Updated November 11, 2026. **JoshOps AI** is the application; each user has PothOS and their ArcheAgent inside it. The latest device audit supersedes earlier summaries that treated missing package records as missing applications.
 
-| Deliverable | Status |
+Verified internal installations span both Mac architectures, four Linux computers and three iOS/iPadOS devices. The current source staging reconciles the mature native UI and account owner with the newer Linux/developer changes. Windows and Android native package builds are tracked in the existing private engineering repository.
+
+The [download manifest](release-artifacts.json) records each platform separately. It is not a claim that all builds have the same installed binary, device capability or approval state.
+
+| Release work | Standing |
 | --- | --- |
-| Existing Personal PothOS front door | Official entry at [pothos.joshops.ai](https://pothos.joshops.ai), with [App](https://pothos.joshops.ai/app) and [Connect](https://pothos.joshops.ai/connect); independent-user and native-runtime qualification remain separate |
-| Product identity, official URLs and operator boundaries | [Product contract](PRODUCT_CONTRACT.md) and [machine-readable companion](product-contract.json) |
-| This project README, mission and contribution documentation | Staged in this repository |
-| Community announcement | [November 7 announcement retained for reference](PRESS_RELEASE.md) |
-| Project repository | [PothOS by JoshOps AI](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI) |
-| Repository visibility | This repository was verified Private on November 11, 2026; changing its documentation does not publish it |
-| Prospective runtime license | Protective-use and distribution terms under review; no final runtime grant |
-| Isolated browser/source export candidate | Separate unpublished preparation; not the public entry, a Personal PothOS/native-app replacement or a standalone runtime release |
-| First native beta | Sign-in, assistant connections, private continuity and shared collaboration; the prepared Apple archive is not yet a distributed customer app |
-| Platform distribution | [Routes documented](DISTRIBUTION.md); no public signed installer or App Store release claimed |
-| IDE, printing/slicer and emulator claims | [Evidence and remaining work](CAPABILITIES.md) distinguished by component |
-| Independently installable runtime source | Not released |
-| ArcheAgent profile, source-backed history and corpus | [Requirements documented](CONTINUING_ARCHEAGENTS.md); public runtime qualification remains required |
-| Daily legacy-work recovery and metacognitive review | Trigger, continuity and restart criteria documented; an always-on public service is not established |
-| Voice integration | Source present; runtime/backend behavior, public packaging and physical-device qualification remain to be verified |
-| Community-to-private-stack Help Desk relay | Not verified |
-| Robotics package | Not included |
-| Founder/private ArcheAgents, memories, voices and credentials | Excluded |
+| Common master UI + native account source convergence | Staged in existing private source; frontend build and 61 targeted boundary tests passed |
+| Windows x86_64 installer / Android ARM64 APK and AAB | Private build qualification active; measured outputs replace these states when returned |
+| Existing Mac/Linux/iOS installations | Verified, preserved |
+| ChatGPT connection kit 0.3.1 | Existing downloadable kit verified; 0.3.2 metadata correction staged separately |
+| Gemini / Muse | Same MCP contract; client-specific setup and acceptance recorded in [Connections](CONNECTIONS.md) |
+| Website | Existing project retained; one download/doorway correction staged; Git sync must be verified before applying it |
+| GitHub support and developer intake | Issue forms and contribution process staged here |
+| Repository visibility | Private; no public visibility change |
+| Runtime source license | Proposal and third-party review remain separate from existing documentation grants |
+| Store / plugin-directory approval | No new approval or submission claimed |
 
-[joshops.ai](https://joshops.ai) is the company website. The existing
-[Personal PothOS](https://pothos.joshops.ai) is the official front door. The front door is shared;
-each person's identity, accounts and information remain their own.
-An invited hosted beta, connection kit and standalone local runtime are distinct
-deliverables. No complete runtime installation command is supplied here because
-that public package has not yet been qualified.
+A release candidate must keep account data separate, recover original work after restart, refuse unauthorized cross-account access, and document its update/rollback route. Those checks apply to actual recipient packages. They do not erase already working installations.
 
-## First beta and later development
-
-Additional device-source adapters, expanded voice, autonomous operations and other
-platforms retain separate work. They do not silently expand the first native
-connection beta. That beta still needs actual distribution and independent-account
-acceptance; source preparation and internal connector tests are not a substitute.
-
-## Beta evidence to produce
-
-A beta must identify the exact source and downloadable artifact, dependency
-licenses, tested configuration and real installation instructions. A new
-operator must be able to complete a supported local task, preserve and correct
-a synthetic memory, restart and recover the same state, and observe actual
-permission and network behavior.
-
-Claims about models, devices, voices, store availability or security require
-evidence for that exact release. A build pass does not demonstrate every
-physical device behavior.
-
-See [license status](../LICENSE_STATUS.md) and [the roadmap](ROADMAP.md).
-
+Maintainers retain original failures and link successor results. No unknown signing/upload outcome is automatically replayed.

@@ -1,4 +1,6 @@
-# PothOS product contract
+# JoshOps AI product contract
+
+Application: **JoshOps AI**. Each person has **PothOS** and their **ArcheAgent** inside it. Existing technical identifiers, repository names and URLs remain compatible. Platform packages are builds of this same master product. The repository stays private until Founder review and publication.
 
 Updated November 7, 2026. This is the common public reference for product identity,
 official entry points, operator boundaries and release ownership. The
