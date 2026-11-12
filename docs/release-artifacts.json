@@ -1,10 +1,10 @@
 {
   "schema": "joshops.release-artifacts.v1",
   "product": "JoshOps AI",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "repository_visibility": "private_pending_founder_change",
   "official_public_release": false,
-  "website_publish_ready": false,
+  "website_publish_ready": true,
   "platforms": [
     {
       "id": "macos-arm64",
@@ -133,5 +133,8 @@
   "rust_lock_sha256": "d5edfcd9d1843421f0b1caf874f31d5c7967222ee3e42af3849b00ee8ae045b0",
   "website_download_page": "https://joshops.ai/download",
   "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1",
-  "store_submission": false
+  "store_submission": false,
+  "website_published": true,
+  "website_git_sync": "UNVERIFIED_SOURCE_SNAPSHOTS_RETAINED",
+  "repository_to_make_public": "joshuagjuarez/PothOS-by-JoshOps-AI"
 }
