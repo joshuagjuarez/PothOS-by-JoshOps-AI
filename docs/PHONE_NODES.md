@@ -40,4 +40,4 @@ Phone data stays behind its native permission and adapter boundaries. Photos, he
 
 Contribute lifecycle fixes, local-engine tests, accessible touch UI, scoped adapters and reproducible device results through [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) and the [participation form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml). Use your own account and devices; never include credentials or private user records in reports.
 
-For optional sponsorship or donated testing hardware, [contact Joshua](mailto:joshua@joshops.ai?subject=JoshOps%20AI%20project%20support). Software access is not conditioned on sponsorship.
+For optional sponsorship or donated testing hardware, [start a project-support discussion](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions). Software access is not conditioned on sponsorship.

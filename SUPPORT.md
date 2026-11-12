@@ -6,6 +6,8 @@ The GitHub issue is the shared work record: author, timestamp, platform, selecte
 
 An issue does not automatically grant a company role or device access. If Memex receives it through the existing HelpDesk, retain the existing case/work identity in the return. Automatic GitHub-to-HelpDesk ingestion has not yet been verified; no second ticket system is implied.
 
-This repository is currently private. Prepare every contribution for possible later public release: use synthetic examples and exclude credentials, private conversations, health records and other people's data. Report sensitive security issues through [SECURITY.md](SECURITY.md).
+This repository and its issue forms are public. Prepare every contribution for public review: use synthetic examples and exclude credentials, private conversations, health records and other people's data. Report sensitive security issues through [SECURITY.md](SECURITY.md).
 
 No guaranteed response time is advertised. The release manifest is the authority for available packages, rather than a support response's estimate.
+
+Use [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) for general questions and collaboration, and [private security reporting](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/security/advisories/new) for vulnerabilities. Routine support does not use a direct Founder-email link. Provider-backed support/help mailboxes will be advertised after delivery and ownership are verified.

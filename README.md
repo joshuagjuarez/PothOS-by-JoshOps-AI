@@ -24,7 +24,7 @@ Use the [developer participation form](https://github.com/joshuagjuarez/PothOS-b
 
 Contribute UI improvements, reusable workflows, adapters, documentation, accessibility checks and reproducible fixes through issues and pull requests. Official updates are reviewed and verified before distribution. Each participant keeps their own accounts, private data and permissions.
 
-For sponsorship, hardware, testing or development support, [contact Joshua](mailto:joshua@joshops.ai?subject=JoshOps%20AI%20project%20support) or use the [project support page](https://joshops.ai/support). Sponsorship is optional; it does not unlock a paid software tier. A GitHub Sponsors payment page is not configured yet.
+For project support, sponsorship proposals, hardware or development collaboration, use [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions). Bugs and testing requests go through the shared issue forms. Sponsorship is optional and does not unlock a paid software tier; a payment account is not configured yet.
 
 ## Price, rights and privacy
 

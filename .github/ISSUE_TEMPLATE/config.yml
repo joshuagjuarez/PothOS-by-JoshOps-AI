@@ -1,6 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Private project contact
-    url: mailto:joshua@joshops.ai
-    about: Account concerns, confidential questions and private security reporting
-
+  - name: Help and project discussion
+    url: https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions
+    about: Questions, ideas, collaboration and project-support proposals
+  - name: Private vulnerability report
+    url: https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/security/advisories/new
+    about: Confidential security reporting; do not post sensitive details publicly

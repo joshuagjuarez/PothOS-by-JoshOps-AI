@@ -1,6 +1,6 @@
 # Security reporting
 
-For a suspected vulnerability, email [joshua@joshops.ai](mailto:joshua@joshops.ai)
+For a suspected vulnerability, use [GitHub private vulnerability reporting](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/security/advisories/new)
 with a concise description and a minimal reproduction. Do not put credentials,
 private memory, recordings, tenant records or sensitive exploit details in a
 public issue.
