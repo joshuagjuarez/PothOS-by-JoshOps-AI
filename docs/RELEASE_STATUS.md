@@ -10,15 +10,15 @@ The [download manifest](release-artifacts.json) records each platform separately
 | --- | --- |
 | Common master UI + native account source convergence | Staged in existing private source; frontend build and 61 targeted boundary tests passed |
 | Windows x86_64 installer | 1.0.8 NSIS installer built; archive and installer hash independently verified; unsigned private artifact, recipient acceptance pending |
-| Android ARM64 APK and AAB | 1.0.8 built; archive and both package hashes independently verified; unsigned private artifact, recipient acceptance pending |
+| Android ARM64 APK and AAB | 1.0.8 APK/AAB signed by the existing native owner, signatures verified, release assets uploaded; recipient acceptance pending |
 | Existing Mac/Linux/iOS installations | Verified, preserved |
 | ChatGPT connection kit 0.3.1 | Existing downloadable kit verified; 0.3.2 metadata correction staged separately |
 | Gemini / Muse | Same MCP contract; client-specific setup and acceptance recorded in [Connections](CONNECTIONS.md) |
-| Website | Existing project retained; one download/doorway correction staged; Git sync must be verified before applying it |
+| Website | Existing company download page and personal doorway updated through their original project APIs; live HTTP verification recorded. Two-way Git sync remains unverified |
 | GitHub support and developer intake | Issue forms and contribution process staged here |
 | Repository visibility | Private; no public visibility change |
 | Runtime source license | Proposal and third-party review remain separate from existing documentation grants |
-| Store / plugin-directory approval | No new approval or submission claimed |
+| Store / plugin-directory approval | Android signing completed; no App Store, Google Play or plugin-directory approval claimed |
 
 A release candidate must keep account data separate, recover original work after restart, refuse unauthorized cross-account access, and document its update/rollback route. Those checks apply to actual recipient packages. They do not erase already working installations.
 
