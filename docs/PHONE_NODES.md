@@ -6,7 +6,7 @@ JoshOps AI is one application. Each enrolled phone can carry its own PothOS work
 
 The iOS master contains a native Apple Foundation adapter using `SystemLanguageModel.default`, local conversation storage, model inventory, addressed Huddle participation, and a bounded workspace relay. The relay keeps original request IDs and separates each enrolled device. An engine is one worker used by the agent; it does not replace the agent's identity or grant access.
 
-The November 12 source repair moves phone relays above presentation views so opening the orb, workbench or coworker overlay does not unmount them. It uses the existing orb and halos for a simple PothOS home, and checks local Foundation readiness independently of the network. Native TypeScript and two lifecycle regression tests passed. A new signed iOS build is underway; this source result alone does not prove installation.
+The November 12 source repair moves phone relays above presentation views so opening the orb, workbench or coworker overlay does not unmount them. It uses the existing orb and halos for a simple PothOS home, and checks local Foundation readiness independently of the network. Native TypeScript and two lifecycle regression tests passed. The corrected iOS master was signed and installed on the maintainer's enrolled iPhone. Independent device readback matches signed build 20261112073914, bundle ai.joshops.app. Cross-device plugin delivery remains a separate test.
 
 The current Founder plugin-to-phone path still has a measured dependency: its registered shared backend cannot start because its Tailscale account proof is unavailable. Phone installation, local engine availability and cross-device routing are separate observations. Repair of that connection is tracked under the existing release work; no working remote phone session is claimed here.
 
@@ -38,6 +38,6 @@ Phone data stays behind its native permission and adapter boundaries. Photos, he
 
 ## Help build it
 
-Contribute lifecycle fixes, local-engine tests, accessible touch UI, scoped adapters and reproducible device results through the [participation form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml). Use your own account and devices; never include credentials or private user records in reports.
+Contribute lifecycle fixes, local-engine tests, accessible touch UI, scoped adapters and reproducible device results through [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) and the [participation form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml). Use your own account and devices; never include credentials or private user records in reports.
 
 For optional sponsorship or donated testing hardware, [contact Joshua](mailto:joshua@joshops.ai?subject=JoshOps%20AI%20project%20support). Software access is not conditioned on sponsorship.
