@@ -57,3 +57,7 @@ Third-party code, model weights and assets retain their own terms. They must be
 reviewed before any bundle is distributed. Project names and marks must not be
 used to imply an endorsement that does not exist.
 
+
+## Private release review packet
+
+The existing [Apache-2.0 source-scope proposal](docs/review/LICENSE-PROPOSAL.md) and [official-service/community participation draft](docs/review/COGNITIVE-PRIVACY-AND-PARTICIPATION.md) are staged here for review. They preserve prior grants and distinguish software licensing from the rules of services this project operates. No new runtime license is applied by staging these documents.
