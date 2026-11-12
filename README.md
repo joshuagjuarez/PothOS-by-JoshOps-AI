@@ -8,19 +8,23 @@ Founded and designed by **Joshua David Gustafson-Juarez**. The project welcomes 
 
 [Open JoshOps AI](https://pothos.joshops.ai/app) · [Downloads](docs/DOWNLOADS.md) · [Connect an assistant](docs/CONNECTIONS.md) · [Contribute](CONTRIBUTING.md) · [Support](SUPPORT.md)
 
-## Release staging
+## Community release
 
-This repository is **private while release staging is reviewed**. Joshua will decide when to make it public. Its historical repository name is retained; the application people download is JoshOps AI.
+This repository and its release downloads are now public. The application people download is **JoshOps AI**; PothOS and their ArcheAgent live inside it. Founder accounts, private memory and credentials remain private.
 
-Existing installations are verified on Mac Intel, Mac Apple Silicon, Linux x86_64, iPhone and iPad. Windows x86_64 and Android ARM64 version 1.0.8 packages have now been built from the reconciled master source and independently hash-verified. Android APK/AAB are now signed and verified with the existing signing identity. The Windows installer remains unsigned. [Download the developer preview](https://joshops.ai/download); repository access and recipient acceptance remain separate. Installed-app evidence, package availability and store approval are recorded separately in the [release manifest](docs/release-artifacts.json).
+Existing installations are verified on Mac Intel, Mac Apple Silicon, Linux x86_64, iPhone and iPad. Windows x86_64 and Android ARM64 version 1.0.8 packages have now been built from the reconciled master source and independently hash-verified. Android APK/AAB are now signed and verified with the existing signing identity. The Windows installer remains unsigned. [Download the community beta](https://joshops.ai/download); fresh recipient-device acceptance remains in progress. Installed-app evidence, package availability and store approval are recorded separately in the [release manifest](docs/release-artifacts.json).
 
 The website is the doorway to the existing master application. Platform builds reuse the common application and preserve device-specific capabilities. A connected recipient package does not contain the founder's personal corpus, credentials or fleet bindings.
+
+A supported phone is also a local computing node. Its native Foundation adapter and local workspace are distinct from the fleet connection. See [Phone nodes and local engines](docs/PHONE_NODES.md) for current support, measured status and adapter contribution boundaries.
 
 ## Build with us
 
 Use the [developer participation form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) to identify your platform, contribution area and whether you represent yourself or a team. An issue records a request; the maintainer assigns approved work and access separately.
 
 Contribute UI improvements, reusable workflows, adapters, documentation, accessibility checks and reproducible fixes through issues and pull requests. Official updates are reviewed and verified before distribution. Each participant keeps their own accounts, private data and permissions.
+
+For sponsorship, hardware, testing or development support, [contact Joshua](mailto:joshua@joshops.ai?subject=JoshOps%20AI%20project%20support) or use the [project support page](https://joshops.ai/support). Sponsorship is optional; it does not unlock a paid software tier. A GitHub Sponsors payment page is not configured yet.
 
 ## Price, rights and privacy
 

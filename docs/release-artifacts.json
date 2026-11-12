@@ -2,7 +2,7 @@
   "schema": "joshops.release-artifacts.v1",
   "product": "JoshOps AI",
   "updated": "2026-11-12",
-  "repository_visibility": "private_pending_founder_change",
+  "repository_visibility": "public",
   "official_public_release": false,
   "website_publish_ready": true,
   "platforms": [
@@ -136,5 +136,6 @@
   "store_submission": false,
   "website_published": true,
   "website_git_sync": "UNVERIFIED_SOURCE_SNAPSHOTS_RETAINED",
-  "repository_to_make_public": "joshuagjuarez/PothOS-by-JoshOps-AI"
+  "repository_visibility_confirmed": "2026-11-12",
+  "public_distribution_stage": "community_beta"
 }
