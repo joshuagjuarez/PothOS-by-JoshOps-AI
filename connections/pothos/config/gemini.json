@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "pothos": {
+      "httpUrl": "https://mcp.joshops.ai/mcp"
+    }
+  }
+}

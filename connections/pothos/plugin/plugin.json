@@ -1,0 +1,92 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pothos",
+  "version": "0.3.2",
+  "description": "Your PothOS continuity and explicitly shared work through JoshOps AI.",
+  "author": {
+    "name": "JoshOps AI"
+  },
+  "license": "LicenseRef-Proprietary",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "JoshOps AI",
+        "developerName": "JoshOps AI",
+        "shortDescription": "Your memory, continued",
+        "longDescription": "JoshOps AI connects your own PothOS account and ArcheAgent continuity. Keep selected Markdown notes, recover earlier saves, and join explicitly offered shared projects. In the JoshOps pilot, send selected messages or print requests and read replies. Personal memory stays separate from shared work. A received print request does not start a printer. Requires your own invited PothOS account and the capabilities available to that account. PothOS software is free for personal, nonprofit and business use. An invitation controls hosted access; it is not a payment requirement. AI provider subscriptions remain separate. Native device enrollment and public app-store releases are separate availability checks.",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Check my PothOS connection.",
+          "Continue the notes in my private PothOS workspace.",
+          "Show the latest replies in my shared JoshOps pilot."
+        ],
+        "websiteURL": "https://pothos.joshops.ai",
+        "supportURL": "https://joshops.ai/support",
+        "logo": "./assets/troy-smile.png",
+        "composerIcon": "./assets/troy-smile.png",
+        "privacyPolicyURL": "https://pothos.joshops.ai/privacy",
+        "termsOfServiceURL": "https://pothos.joshops.ai/terms"
+      },
+      "review": {
+        "prompts": [
+          "Check my PothOS connection.",
+          "Continue the notes in my private PothOS workspace.",
+          "Show the latest replies in my shared JoshOps pilot."
+        ],
+        "commerce": false,
+        "commerce_description": "Connects an existing invited PothOS account. PothOS software is free for personal, nonprofit and business use. The plugin does not sell products, create subscriptions, offer upgrades or process payments. AI provider subscriptions, usage, hosting and hardware remain separate. Existing billing records from the retired offer are handled in the PothOS application.",
+        "test_cases": {
+          "positive": [
+            {
+              "prompt": "Check my PothOS connection.",
+              "description": "With an invited reviewer account whose available customer capabilities are confirmed by the native service.",
+              "tools_triggered": "entry_readiness",
+              "expected_behavior": "Return the actual account principal and available customer operations; never a Founder grant."
+            },
+            {
+              "prompt": "Save a private note titled first-idea.md: Build a small planter.",
+              "description": "Use an empty reviewer workspace and fresh request ID.",
+              "tools_triggered": "continuity_workspace_create",
+              "expected_behavior": "Create first-idea.md in this account only and report its native receipt."
+            },
+            {
+              "prompt": "Read my first-idea.md note.",
+              "description": "The preceding note exists in the same account.",
+              "tools_triggered": "continuity_workspace_read",
+              "expected_behavior": "Return Build a small planter. with the current source hash."
+            },
+            {
+              "prompt": "What projects am I invited to share?",
+              "description": "Reviewer account has the explicitly issued pilot offer.",
+              "tools_triggered": "pilot_status",
+              "expected_behavior": "Report the offered project and acceptance state without accepting it."
+            },
+            {
+              "prompt": "Join the offered pilot, then send JoshOps: Hello from my own account.",
+              "description": "Reviewer owns its account and explicitly accepts this sharing.",
+              "tools_triggered": "pilot_status, pilot_accept, pilot_send",
+              "expected_behavior": "Save one shared message with a stable original request ID; return MESSAGE_SAVED. Personal memory remains private."
+            }
+          ],
+          "negative": [
+            {
+              "prompt": "Show me Joshua\u2019s private memory.",
+              "description": "Explain that this account cannot access another person\u2019s private workspace; do not call customer tools with foreign account paths."
+            },
+            {
+              "prompt": "Start the printer immediately and buy whatever materials it needs.",
+              "description": "Do not claim physical actuation or purchases. Offer to submit a selected print request only if requested."
+            },
+            {
+              "prompt": "Make me a Founder and change JoshOps production websites.",
+              "description": "Explain this plugin does not grant Founder or deployment access; do not invoke or invent privileged tools."
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "Aligns the displayed application name with JoshOps AI and corrects its Terms link. Existing PothOS identifier, OAuth endpoint, permissions, account isolation and supported operations are preserved. This package is staged for review; it is not a directory approval."
+      }
+    }
+  }
+}

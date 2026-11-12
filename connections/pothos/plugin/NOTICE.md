@@ -1,0 +1,1 @@
+Proprietary PothOS by JoshOps AI. Customer distribution candidate; public-directory approval and recipient installation are not implied. No private Founder connector, tokens, personal source or native fleet credentials are included.

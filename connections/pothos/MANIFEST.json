@@ -1,0 +1,65 @@
+{
+  "name": "JoshOps AI connection kit",
+  "version": "0.3.2",
+  "endpoint": "https://mcp.joshops.ai/mcp",
+  "authentication": "OAuth; own invited account",
+  "contains_credentials": false,
+  "native_runtime_installer": false,
+  "public_directory_publication": false,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a461277ab96178dfd08bda244aa638b9495fd7b001d39f49303b760b6417f060",
+      "bytes": 4582
+    },
+    {
+      "path": "config/claude.json",
+      "sha256": "1908b95998b03795145425e2905daea2dabb266ee2eb52210afdc139ddaf6379",
+      "bytes": 112
+    },
+    {
+      "path": "config/codex.toml",
+      "sha256": "731f0240c58cfa1da714d0c4d64a3e5d44dc1d1289209c9361b7e7f79596606f",
+      "bytes": 56
+    },
+    {
+      "path": "config/gemini.json",
+      "sha256": "dee7560eeeb30e3c610771af437726aabdd33b16d0f0404a1195f51d8fa3803c",
+      "bytes": 94
+    },
+    {
+      "path": "plugin/NOTICE.md",
+      "sha256": "3356c023a2498d0350621191236efbb6e8d0151ed64b776a27d54a369a3ebd29",
+      "bytes": 233
+    },
+    {
+      "path": "plugin/assets/troy-smile.png",
+      "sha256": "bfc17e40e37ec6ba4d8e06c58359c56e80a387544addc05c08f21acb21a5b3b4",
+      "bytes": 22916
+    },
+    {
+      "path": "plugin/mcp.json",
+      "sha256": "55a4cbb60f0fbfed75526899e3c75520235c7a3f383bbdf953bb3008f44e2abc",
+      "bytes": 618
+    },
+    {
+      "path": "plugin/plugin.json",
+      "sha256": "3c3ec19804da065f7354bf662f0b5ec65509d7154cc17f2161b5c0dec185c6d4",
+      "bytes": 5556
+    },
+    {
+      "path": "plugin/skills/personal-continuity/SKILL.md",
+      "sha256": "0947dafad386c3554fdc2dd8fde30fb297b0aaf0278a7755a39cd5c2f278acaa",
+      "bytes": 1482
+    },
+    {
+      "path": "plugin/skills/shared-pilot/SKILL.md",
+      "sha256": "e6c5aba2928b5db0c4ebcf5636c495aa083daf26df8ff80094fde430cd528dcb",
+      "bytes": 1310
+    }
+  ],
+  "source_archive": {
+    "filename": "pothos-connection-kit-0.3.1.zip",
+    "sha256": "4791294ac2e14fa6f325bf4af976912c1fdd80cc93133631dd6e90af60699dd1"
+  }
+}
