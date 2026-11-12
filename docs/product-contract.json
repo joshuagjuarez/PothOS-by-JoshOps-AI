@@ -1,12 +1,12 @@
 {
   "schema": "pothos.public-product-contract.v1",
-  "updated": "2026-11-07",
-  "product": "PothOS",
+  "updated": "2026-11-11",
+  "product": "JoshOps AI",
   "company": "JoshOps AI",
   "scope": "Official product identity, entry points, operator requirements and release boundaries; not a runtime grant or verification receipt.",
   "canonical_contract_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/PRODUCT_CONTRACT.md",
   "official_entry": {
-    "name": "Personal PothOS",
+    "name": "JoshOps AI",
     "url": "https://pothos.joshops.ai",
     "app_url": "https://pothos.joshops.ai/app",
     "connect_url": "https://pothos.joshops.ai/connect",
@@ -73,7 +73,7 @@
       "standalone_runtime_release": false
     },
     "public_repository_contents": "Documentation and community materials; standalone runtime source not released.",
-    "signed_customer_packages": "Unfinished; current availability requires release-specific evidence.",
+    "signed_customer_packages": "Per-platform measured state in docs/release-artifacts.json; existing installed applications are preserved.",
     "required_verification": [
       "new_operator_setup",
       "independent_data_and_permissions",
@@ -82,7 +82,8 @@
       "updates",
       "rollback"
     ],
-    "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md"
+    "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md",
+    "repository_visibility": "PRIVATE_PENDING_FOUNDER_REVIEW"
   },
   "account_model": {
     "standing": "PRODUCT_REQUIREMENTS_NOT_RUNTIME_VERIFICATION",
@@ -101,7 +102,7 @@
     "existing_account_continuity": "Preserve established state, identity, fleet registrations and source lineage when adopting or updating the common product.",
     "new_account_setup": "Establish operator-owned state and enroll nodes through the same product mechanisms.",
     "distribution_boundary": "Exclude private records, credentials and account bindings from public package defaults while retaining reusable capabilities.",
-    "current_package_split": "Private connections and customer previews are integration/distribution states, not separate products or feature tiers. Customer runtime connection remains unfinished.",
+    "current_package_split": "Platform builds and account-specific configuration of the same master application; no separate product or founder feature tier.",
     "required_verification": [
       "two_independent_accounts_on_same_supported_build",
       "same_feature_contract_with_each_accounts_own_resources",
@@ -130,5 +131,7 @@
       "shared_connector_contract": "Reuse the common service contract across supported authenticated chat-client transports; verify each client's provider access separately.",
       "customer_derivation": "Preserve common product code and capabilities; replace account-specific defaults and bindings with the new operator's own profile and permissions."
     }
-  }
+  },
+  "personal_continuity": "PothOS",
+  "personal_agent": "ArcheAgent"
 }

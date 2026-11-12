@@ -1,0 +1,50 @@
+name: Developer participation
+description: Join testing, implementation, documentation or accessibility work.
+title: "[Participation]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Your GitHub account and this issue record the request. Do not include passwords, private contact details or other people's data. Requested roles are reviewed before access is assigned."
+  - type: dropdown
+    id: representation
+    attributes:
+      label: You are contributing as
+      options: [Individual, Development team, Business, Nonprofit, Research or education lab, Community organization]
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Public organization or project name (optional)
+  - type: dropdown
+    id: platforms
+    attributes:
+      label: Platforms you can test
+      multiple: true
+      options: [Mac Apple Silicon, Mac Intel, Windows x86_64, Linux Ubuntu x86_64, Android ARM64, iPhone, iPad, Web, ChatGPT or Codex, Gemini CLI, Other supported MCP client]
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Areas of contribution
+      multiple: true
+      options: [UI and accessibility, Native platform packaging, Python and CLI workflows, MCP or API adapters, Memory continuity and recovery, Testing and bug reproduction, Documentation, Security review]
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: First useful contribution
+      description: Describe a bounded task and how you would verify it; a public example link is optional.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Shared work boundaries
+      options:
+        - label: I understand access and official releases require maintainer review; this request does not grant permissions.
+          required: true
+        - label: I have excluded secrets and private personal data from this issue.
+          required: true

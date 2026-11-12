@@ -1,0 +1,108 @@
+{
+  "schema": "joshops.release-artifacts.v1",
+  "product": "JoshOps AI",
+  "updated": "2026-11-11",
+  "repository_visibility": "private",
+  "official_public_release": false,
+  "website_publish_ready": false,
+  "platforms": [
+    {
+      "id": "macos-arm64",
+      "label": "Mac Apple Silicon",
+      "version": "1.0.7",
+      "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "macos-x64",
+      "label": "Mac Intel",
+      "version": "1.0.7",
+      "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "linux-x64",
+      "label": "Linux Ubuntu x86_64",
+      "version": "1.0.0",
+      "status": "INSTALLATION_VERIFIED_RECIPIENT_EXPORT_PENDING",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "windows-x64",
+      "label": "Windows x86_64",
+      "version": "1.0.8",
+      "status": "PRIVATE_UNSIGNED_INSTALLER_VERIFIED",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false,
+      "source_commit": "c671eb8800003a77b48845a5037687a68b3a123a",
+      "private_artifact_url": "https://github.com/joshuagjuarez/Memex-OS/actions/runs/43152274034/artifacts/13914978340",
+      "artifact_sha256": "06119ebd436a58d4b15317afa30b3792c48de10591980df9d4ddb3cc6e3dcc3e",
+      "artifact_bytes": 7796804,
+      "files": [
+        {
+          "file": "JoshOps-AI-1.0.8-windows-JoshOps AI_1.0.8_x64-setup.exe",
+          "bytes": 7777933,
+          "sha256": "d0676fc5bf382355dc09fe0814ccd4af64ac2243b3ad0705ca4afb686ca03adb"
+        }
+      ],
+      "recipient_acceptance": "NOT_YET_MEASURED"
+    },
+    {
+      "id": "android-arm64",
+      "label": "Android ARM64",
+      "version": "1.0.8",
+      "status": "PRIVATE_UNSIGNED_BUILD_VERIFIED",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false,
+      "source_commit": "fd6d0f817c81195ce26ccfae88be25a080c75455",
+      "private_artifact_url": "https://github.com/joshuagjuarez/Memex-OS/actions/runs/43151840214/artifacts/13915061139",
+      "artifact_sha256": "6f1887df995cd077f560999636010ff45973f6ae1c035e3fbbb75025b3ab77ba",
+      "artifact_bytes": 90575590,
+      "files": [
+        {
+          "file": "JoshOps-AI-1.0.8-android-app-universal-release-unsigned.apk",
+          "bytes": 172184370,
+          "sha256": "7f1292be6c4af15ebc36771d4976909ed08981d2b59872e1bbdfa3a65c30ccce"
+        },
+        {
+          "file": "JoshOps-AI-1.0.8-android-app-universal-release.aab",
+          "bytes": 46139827,
+          "sha256": "2aac34c489820e63a96a64f16a992f7f67aa1bf0ebdab04ba543757d60d09e4d"
+        }
+      ],
+      "native_library_count": 9,
+      "supported_abis": [
+        "arm64-v8a"
+      ],
+      "recipient_acceptance": "NOT_YET_MEASURED"
+    },
+    {
+      "id": "ios-ipados",
+      "label": "iPhone / iPad",
+      "version": "1.0.7",
+      "status": "INSTALLED_PUBLIC_DISTRIBUTION_PAUSED",
+      "public_download_url": null,
+      "sha256": null,
+      "signature_verified": false
+    },
+    {
+      "id": "mcp-kit",
+      "label": "ChatGPT / MCP connection kit",
+      "version": "0.3.1",
+      "status": "DOWNLOAD_BYTES_VERIFIED",
+      "public_download_url": "https://pothos.joshops.ai/downloads/pothos-connection-kit-0.3.1.zip",
+      "sha256": "4791294ac2e14fa6f325bf4af976912c1fdd80cc93133631dd6e90af60699dd1",
+      "signature_verified": false,
+      "bytes": 30759
+    }
+  ],
+  "rust_lock_sha256": "d5edfcd9d1843421f0b1caf874f31d5c7967222ee3e42af3849b00ee8ae045b0"
+}

@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible issue in an existing JoshOps AI surface.
+title: "[Bug]: "
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Platform, architecture and client
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version, package checksum or source commit
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Smallest reproducible steps
+      description: Use synthetic data. Include expected and observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: recovery
+    attributes:
+      label: Original request reference and recovery result
+      description: Redact private data. Do not replay an uncertain effect just to obtain a cleaner error.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed credentials and private personal information.
+          required: true
