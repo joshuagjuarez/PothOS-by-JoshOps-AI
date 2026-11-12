@@ -37,10 +37,22 @@
       "id": "windows-x64",
       "label": "Windows x86_64",
       "version": "1.0.8",
-      "status": "PRIVATE_BUILD_QUALIFICATION",
+      "status": "PRIVATE_UNSIGNED_INSTALLER_VERIFIED",
       "public_download_url": null,
       "sha256": null,
-      "signature_verified": false
+      "signature_verified": false,
+      "source_commit": "c671eb8800003a77b48845a5037687a68b3a123a",
+      "private_artifact_url": "https://github.com/joshuagjuarez/Memex-OS/actions/runs/43152274034/artifacts/13914978340",
+      "artifact_sha256": "06119ebd436a58d4b15317afa30b3792c48de10591980df9d4ddb3cc6e3dcc3e",
+      "artifact_bytes": 7796804,
+      "files": [
+        {
+          "file": "JoshOps-AI-1.0.8-windows-JoshOps AI_1.0.8_x64-setup.exe",
+          "bytes": 7777933,
+          "sha256": "d0676fc5bf382355dc09fe0814ccd4af64ac2243b3ad0705ca4afb686ca03adb"
+        }
+      ],
+      "recipient_acceptance": "NOT_YET_MEASURED"
     },
     {
       "id": "android-arm64",
@@ -91,5 +103,6 @@
       "signature_verified": false,
       "bytes": 30759
     }
-  ]
+  ],
+  "rust_lock_sha256": "d5edfcd9d1843421f0b1caf874f31d5c7967222ee3e42af3849b00ee8ae045b0"
 }
