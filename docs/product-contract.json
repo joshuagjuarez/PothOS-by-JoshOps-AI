@@ -1,6 +1,6 @@
 {
   "schema": "pothos.public-product-contract.v1",
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "product": "JoshOps AI",
   "company": "JoshOps AI",
   "scope": "Official product identity, entry points, operator requirements and release boundaries; not a runtime grant or verification receipt.",
@@ -83,7 +83,7 @@
       "rollback"
     ],
     "status_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/blob/main/docs/RELEASE_STATUS.md",
-    "repository_visibility": "PRIVATE_PENDING_FOUNDER_REVIEW"
+    "repository_visibility": "PUBLIC"
   },
   "account_model": {
     "standing": "PRODUCT_REQUIREMENTS_NOT_RUNTIME_VERIFICATION",
