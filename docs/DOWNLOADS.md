@@ -1,5 +1,7 @@
 # Download JoshOps AI
 
+**For everyone:** published installer downloads do not require a GitHub account. The web app uses your JoshOps AI account. GitHub source, issues and contributor forms are optional developer resources, not the installation flow.
+
 [Official download page](https://joshops.ai/download) · [Release files and checksums](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1)
 
 | Platform | Download | Status |
@@ -8,9 +10,9 @@
 | Android ARM64 | [Signed APK 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.apk) | Existing Android signing identity reused; signature verified |
 | Android developers | [Signed AAB 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.aab) | App bundle for developer review; not a Google Play listing |
 | ChatGPT / MCP clients | [Connection kit 0.3.2](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-connection-kit-0.3.2.zip) | OAuth configuration and scoped plugin source |
-| Mac Apple Silicon / Intel | [Testing access](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) | Existing native installations verified; request enrolled-device testing; public installer pending |
-| Linux Ubuntu x86_64 | [Testing access](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) | Existing native installations verified; request enrolled-device testing; public installer pending |
-| iPhone / iPad | [Request native testing](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) | Native app and on-device Foundation adapter exist; public App Store distribution is not available yet |
+| Mac Apple Silicon / Intel | [Use web app](https://pothos.joshops.ai/install) | Existing native installations verified; public installer not yet published; the link opens the web app |
+| Linux Ubuntu x86_64 | [Use web app](https://pothos.joshops.ai/install) | Existing native installations verified; public installer not yet published; the link opens the web app |
+| iPhone / iPad | [Use web app](https://pothos.joshops.ai/install) | Native app exists; public App Store/TestFlight distribution is not available yet; the link opens the web app |
 
 The application is JoshOps AI, with your PothOS and ArcheAgent inside it. [Choose your home computer, phone/tablet and assistant](DEVICE_SETUP.md). The simple interface and the environment's supported computing capabilities are separate. These community beta builds use the existing account-connected backend; the complete standalone Python harness is not bundled. Use your own admitted account and permissions.
 

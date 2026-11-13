@@ -13,7 +13,10 @@
       "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
       "public_download_url": null,
       "sha256": null,
-      "signature_verified": false
+      "signature_verified": false,
+      "consumer_fallback_url": "https://pothos.joshops.ai/install",
+      "consumer_fallback_kind": "connected_web_app",
+      "consumer_installation_status": "Native public package or store link not published"
     },
     {
       "id": "macos-x64",
@@ -22,7 +25,10 @@
       "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
       "public_download_url": null,
       "sha256": null,
-      "signature_verified": false
+      "signature_verified": false,
+      "consumer_fallback_url": "https://pothos.joshops.ai/install",
+      "consumer_fallback_kind": "connected_web_app",
+      "consumer_installation_status": "Native public package or store link not published"
     },
     {
       "id": "linux-x64",
@@ -31,7 +37,10 @@
       "status": "INSTALLATION_VERIFIED_RECIPIENT_EXPORT_PENDING",
       "public_download_url": null,
       "sha256": null,
-      "signature_verified": false
+      "signature_verified": false,
+      "consumer_fallback_url": "https://pothos.joshops.ai/install",
+      "consumer_fallback_kind": "connected_web_app",
+      "consumer_installation_status": "Native public package or store link not published"
     },
     {
       "id": "windows-x64",
@@ -56,7 +65,7 @@
       ],
       "recipient_acceptance": "NOT_YET_MEASURED",
       "bytes": 7777933,
-      "access": "GitHub repository remains private until its owner changes visibility",
+      "access": "Public direct download; no GitHub account required",
       "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1"
     },
     {
@@ -93,7 +102,7 @@
       ],
       "recipient_acceptance": "NOT_YET_MEASURED",
       "bytes": 172263845,
-      "access": "GitHub repository remains private until its owner changes visibility",
+      "access": "Public direct download; no GitHub account required",
       "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1",
       "android_signer_sha256": [
         "243854370b4ca74f8f68298dbf57c161728323c0a282ade822f343ec38da96b3"
@@ -106,7 +115,10 @@
       "status": "INSTALLED_PUBLIC_DISTRIBUTION_PAUSED",
       "public_download_url": null,
       "sha256": null,
-      "signature_verified": false
+      "signature_verified": false,
+      "consumer_fallback_url": "https://pothos.joshops.ai/install",
+      "consumer_fallback_kind": "connected_web_app",
+      "consumer_installation_status": "Native public package or store link not published"
     },
     {
       "id": "mcp-kit",
@@ -117,7 +129,7 @@
       "sha256": "3e391e445507282a5714910aff716b3ba25e2a21c68605fe59f604b9dbc9ac04",
       "signature_verified": false,
       "bytes": 30854,
-      "access": "GitHub repository remains private until its owner changes visibility",
+      "access": "Public direct download; no GitHub account required",
       "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1",
       "files": [
         {
@@ -137,5 +149,7 @@
   "website_published": true,
   "website_git_sync": "UNVERIFIED_SOURCE_SNAPSHOTS_RETAINED",
   "repository_visibility_confirmed": "2026-11-12",
-  "public_distribution_stage": "community_beta"
+  "public_distribution_stage": "community_beta",
+  "consumer_entry": "https://joshops.ai/download",
+  "contributor_intake_is_not_installation": true
 }

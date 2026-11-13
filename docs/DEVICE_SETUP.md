@@ -24,6 +24,6 @@ Start with one useful task: save a work note, recover the same note in a new ses
 
 ## Choose what you have
 
-[Request device access or join testing](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml). Tell us your home-computer platform, phone/tablet platform, supported assistant and first intended workflow. You can participate without a phone, without a personal computer, or as part of a lab; select the corresponding option. Do not post passwords or private account information.
+Start at the [download page](https://joshops.ai/download) for an available installer or [use the web app](https://pothos.joshops.ai/install). No GitHub account or developer role is required to use the published files. Native iOS store delivery and Mac/Linux installers remain separate release work. If you want to contribute development or testing, the [optional contributor form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) collects your platforms and proposed work. You can participate without a phone, without a personal computer, or as part of a lab; select the corresponding option. Do not post passwords or private account information.
 
 [Official downloads](https://joshops.ai/download) · [Contribute](../CONTRIBUTING.md) · [Discuss your setup](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) · [Support and partnerships](SUPPORT-THE-PROJECT.md)

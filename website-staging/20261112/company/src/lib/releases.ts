@@ -1,3 +1,5 @@
+import { POTHOS_INSTALL_URL } from "./personalApp";
+
 // Shared native distribution catalogue. Developer-preview verification is not
 // customer qualification; the page, crawler projection and info tools share it.
 export type ReleaseChannel = "app-store" | "google-play" | "installer";
@@ -9,6 +11,8 @@ export const RELEASE_EVIDENCE = `${RELEASE_REPO_URL}/releases/tag/${RELEASE_TAG}
 export const RELEASE_DOWNLOAD_BASE = `${RELEASE_REPO_URL}/releases/download/${RELEASE_TAG}/`;
 export const RELEASE_ACCESS_NOTE = "Free public downloads. Choose your device or connect your AI assistant.";
 export const DEVICE_ACCESS_URL = `${RELEASE_REPO_URL}/issues/new?template=developer-participation.yml`;
+/** Consumer fallback; developer participation is never an installation route. */
+export const WEB_APP_INSTALL_URL = POTHOS_INSTALL_URL;
 export const RELEASE_ISSUES_URL = `${RELEASE_REPO_URL}/issues/new/choose`;
 export const INTERNAL_BUILD_STATUS = "Native app running on enrolled devices. Request access for your device.";
 export const NATIVE_LABEL = "Native application";
@@ -157,7 +161,7 @@ export function nativeReleaseSummary() {
 /** Static crawler projections are generated from this same catalogue. */
 export function nativeReleaseCopy(): string {
   return `Download JoshOps AI. ${RELEASE_ACCESS_NOTE} ` + nativeReleaseSummary().map((r) =>
-    `${r.platform}: ${r.status}. ${"verifiedOn" in r ? `v${r.version}; ${r.bytes} bytes; ${r.signature}; verified ${r.verifiedOn} UTC; SHA-256 ${r.sha256}; ${r.url}.` : "url" in r ? `v${r.version}; qualified ${r.qualifiedOn}; ${r.url}.` : `Request device access: ${DEVICE_ACCESS_URL}. Open web app.`}`
+    `${r.platform}: ${r.status}. ${"verifiedOn" in r ? `v${r.version}; ${r.bytes} bytes; ${r.signature}; verified ${r.verifiedOn} UTC; SHA-256 ${r.sha256}; ${r.url}.` : "url" in r ? `v${r.version}; qualified ${r.qualifiedOn}; ${r.url}.` : `Native download not yet published. Use web app: ${WEB_APP_INSTALL_URL}.`}`
   ).join(" ");
 }
 export const DOWNLOAD_PATH = "/download";
