@@ -1,6 +1,6 @@
 # JoshOps AI product contract
 
-Application: **JoshOps AI**. Each person has **PothOS** and their **ArcheAgent** inside it. Existing technical identifiers, repository names and URLs remain compatible. Platform packages are builds of this same master product. The repository stays private until Founder review and publication.
+Application: **JoshOps AI**. Each person has **PothOS** and their **ArcheAgent** inside it. Existing technical identifiers, repository names and URLs remain compatible. Platform packages are builds of this same master product. The product repository and published release assets are public; Founder repositories, private records and credentials remain private.
 
 Updated November 7, 2026. This is the common public reference for product identity,
 official entry points, operator boundaries and release ownership. The
@@ -9,7 +9,7 @@ These requirements do not certify unfinished runtime or platform work.
 
 ## One product, one official front door
 
-**PothOS by JoshOps AI** is the product. The existing **Personal PothOS** is its
+**JoshOps AI** is the application; PothOS and each person's ArcheAgent live inside it. The existing **Personal PothOS** is its
 official web front door for individuals, nonprofits and businesses. Each operator
 uses their own identity, data, ArcheAgents and permitted connections.
 
