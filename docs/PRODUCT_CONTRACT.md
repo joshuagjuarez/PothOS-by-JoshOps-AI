@@ -91,6 +91,9 @@ source attachments and grants. Removing a display name alone is insufficient
 if private bindings or records remain. Product licensing and an operator's
 private repository access are separate recorded responsibilities.
 
+
+Free Personal/community software and the Developer participation path are distinct from participation in JoshOps AI's operated **Enterprise PothOS** environment and founder-led services. Enterprise participation, ownership and service terms are being formalized separately. This technical product contract does not activate paid access, issue ownership, or promise that operated enterprise services are free.
+
 ## Product and operator commitments
 
 - **Official PothOS software is free of charge, always.** The direction includes
