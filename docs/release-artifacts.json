@@ -1,7 +1,7 @@
 {
   "schema": "joshops.release-artifacts.v1",
   "product": "JoshOps AI",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "repository_visibility": "public",
   "official_public_release": false,
   "website_publish_ready": true,
@@ -114,11 +114,16 @@
       "version": "1.0.7",
       "status": "INSTALLED_PUBLIC_DISTRIBUTION_PAUSED",
       "public_download_url": null,
-      "sha256": null,
-      "signature_verified": false,
+      "sha256": "bb628d4798b681ef14d2e36217b090a97f2a34aeb84308750d789df561f03a99",
+      "signature_verified": true,
       "consumer_fallback_url": "https://pothos.joshops.ai/install",
       "consumer_fallback_kind": "connected_web_app",
-      "consumer_installation_status": "Native public package or store link not published"
+      "consumer_installation_status": "Signed build uploaded and processed VALID; App Store submission preparation continues; public store link not published",
+      "bytes": 30672135,
+      "build": "1.0.9",
+      "distribution_progress": "APPLE_BINARY_VALID_DRAFT_PREPARED",
+      "apple_processing_state": "VALID",
+      "app_store_state": "PREPARE_FOR_SUBMISSION"
     },
     {
       "id": "mcp-kit",
@@ -147,7 +152,7 @@
   "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.8-beta.1",
   "store_submission": false,
   "website_published": true,
-  "website_git_sync": "UNVERIFIED_SOURCE_SNAPSHOTS_RETAINED",
+  "website_git_sync": "BIDIRECTIONAL_PRIVATE_SOURCE_VERIFIED",
   "repository_visibility_confirmed": "2026-11-12",
   "public_distribution_stage": "community_beta",
   "consumer_entry": "https://joshops.ai/download",
