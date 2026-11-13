@@ -43,7 +43,14 @@
       "Preserve independent information and permissions; the shared entry does not share private state or authority.",
       "Retain reusable profile, identity, memory, agent, recovery, accessibility and developer mechanisms where implemented.",
       "Exclude operator-specific instances, private data, credentials and configuration from public packages."
-    ]
+    ],
+    "operated_enterprise": {
+      "name": "Enterprise PothOS",
+      "distinct_from_free_personal_and_developer_foundations": true,
+      "terms": "Participation, ownership and founder-led service terms are being formalized separately.",
+      "paid_access_activated_by_contract": false,
+      "ownership_issued_by_contract": false
+    }
   },
   "official_release_owner": {
     "github": "joshuagjuarez",
