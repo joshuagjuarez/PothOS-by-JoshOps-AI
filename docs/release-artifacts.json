@@ -1,7 +1,7 @@
 {
   "schema": "joshops.release-artifacts.v1",
   "product": "JoshOps AI",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "repository_visibility": "public",
   "official_public_release": false,
   "website_publish_ready": true,
@@ -9,14 +9,25 @@
     {
       "id": "macos-arm64",
       "label": "Mac Apple Silicon",
-      "version": "1.0.7",
-      "status": "INSTALLATION_VERIFIED_PRIVATE_PACKAGE",
-      "public_download_url": null,
-      "sha256": null,
-      "signature_verified": false,
+      "version": "1.0.10",
+      "status": "SIGNED_NOTARIZED_CONNECTED_PREVIEW",
+      "public_download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/JoshOps-AI-1.0.10-macos-arm64-notarized.dmg",
+      "sha256": "4f97c28c24af5bdf0c9a294f31487df752b4c47cf5aaddca0ecb3ad9e784f86b",
+      "signature_verified": true,
       "consumer_fallback_url": "https://pothos.joshops.ai/install",
       "consumer_fallback_kind": "connected_web_app",
-      "consumer_installation_status": "Native public package or store link not published"
+      "consumer_installation_status": "Public notarized connected preview",
+      "bytes": 9935081,
+      "notarization": "Accepted",
+      "stapler_validated": true,
+      "gatekeeper_passed": true,
+      "anonymous_download_verified": true,
+      "source_commit": "9a36e9996d950d35dae58399478b267536920a43",
+      "source_dirty": false,
+      "release_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.10-beta.1",
+      "dependency_notice_count": 334,
+      "complete_local_model_package": false,
+      "recipient_acceptance": "NOT_YET_MEASURED"
     },
     {
       "id": "macos-x64",
@@ -156,5 +167,6 @@
   "repository_visibility_confirmed": "2026-11-12",
   "public_distribution_stage": "community_beta",
   "consumer_entry": "https://joshops.ai/download",
-  "contributor_intake_is_not_installation": true
+  "contributor_intake_is_not_installation": true,
+  "release_channel": "public connected previews"
 }

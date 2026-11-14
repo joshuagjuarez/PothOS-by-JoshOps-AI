@@ -1,6 +1,6 @@
 # License and publication status
 
-Updated November 7, 2026.
+Updated November 14, 2026.
 
 The [product contract](docs/PRODUCT_CONTRACT.md) identifies the official
 [Personal PothOS](https://pothos.joshops.ai) entry, independent-operator boundary
@@ -61,3 +61,8 @@ used to imply an endorsement that does not exist.
 ## Private release review packet
 
 The existing [Apache-2.0 source-scope proposal](docs/review/LICENSE-PROPOSAL.md) and [official-service/community participation draft](docs/review/COGNITIVE-PRIVACY-AND-PARTICIPATION.md) are staged here for review. They preserve prior grants and distinguish software licensing from the rules of services this project operates. No new runtime license is applied by staging these documents.
+
+
+## Published application previews
+
+The [Mac 1.0.10 connected preview](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/tag/v1.0.10-beta.1) includes a dependency inventory, the resolved dependency locks and copies of dependency notices. The release preserves existing licensing status; publishing a signed installer does not publish private runtime source or add a new source-license grant. The application is attributed to JoshOps AI and retains its actual author and dependency notices.

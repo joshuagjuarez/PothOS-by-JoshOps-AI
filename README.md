@@ -12,7 +12,7 @@ Founded and designed by **Joshua David Gustafson-Juarez**. The project welcomes 
 
 This repository and its release downloads are now public. The application people download is **JoshOps AI**; PothOS and their ArcheAgent live inside it. Founder accounts, private memory and credentials remain private.
 
-Existing installations are verified on Mac Intel, Mac Apple Silicon, Linux x86_64, iPhone and iPad. Windows x86_64 and Android ARM64 version 1.0.8 packages have now been built from the reconciled master source and independently hash-verified. Android APK/AAB are now signed and verified with the existing signing identity. The Windows installer remains unsigned. [Download JoshOps AI](https://joshops.ai/download); choose your platform and follow its installation instructions. Installed-app evidence, package availability and store approval are recorded separately in the [release manifest](docs/release-artifacts.json).
+Mac with Apple silicon now has a signed, Apple-notarized **1.0.10 connected preview**. Android APK/AAB 1.0.8 are signed and verified. The Windows 1.0.8 installer remains unsigned. [Download the Mac preview](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/JoshOps-AI-1.0.10-macos-arm64-notarized.dmg) or [choose your platform](docs/DOWNLOADS.md). These previews connect to the existing account service; complete local CLI/model packages and store approvals have their own release status in the [artifact manifest](docs/release-artifacts.json).
 
 The website is the doorway to the existing master application. Platform builds reuse the common application and preserve device-specific capabilities. A connected recipient package does not contain the founder's personal corpus, credentials or fleet bindings.
 
@@ -20,12 +20,11 @@ A supported phone is also a local computing node. Its native Foundation adapter 
 
 ## One environment for your work
 
-- **Personal:** maintain continuity for notes, files, ideas and projects across your devices.
-- **Entrepreneur:** organize ventures, contacts, responsibilities and repeatable workflows.
-- **Enterprise:** coordinate accountable work and connect authorized services, including Google Workspace.
-- **Developer:** use a connected assistant to reach your permitted source, local workers, workflow cards and registered engineering tools.
+- **Personal:** free continuity for notes, files, ideas and projects.
+- **Enterprise:** the $20/month household membership model for participation in JoshOps AI operations, organizational support and scoped implementation work. Its intended ownership, profit-sharing and property-participation structure remains under formalization; enrollment awaits the actual terms.
+- **Developer:** free participation in the published GitHub materials and development program, under their applicable licenses and account permissions.
 
-These are uses of the same application. Available services follow the user's connected accounts, enrolled devices and permissions. [Connection and HTTPS setup](docs/CONNECTIONS.md) explains hosted assistants and local CLI clients.
+These are three views of the same application. Shared HelpDesk and Huddle stay available across them, and Halo is an optional quiet view. Available services follow the user's connected accounts, enrolled devices and permissions. [Connection and HTTPS setup](docs/CONNECTIONS.md) explains hosted assistants and local CLI clients.
 
 ## Build with us
 

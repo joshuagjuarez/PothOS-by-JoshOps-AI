@@ -6,7 +6,7 @@
 
 A Mac, Windows or Linux computer can be the continuing home for your environment. It keeps its normal operating system and can provide storage, supported local compute and tools. A lab or team can use an admitted shared computer rather than buying one computer per phone.
 
-The current Windows download is an account-connected application. The complete standalone Python runtime is not bundled in the public packages. Existing Mac and Linux installations demonstrate the local workbench; public recipient installers for those platforms are still being prepared. See [the exact download routes](DOWNLOADS.md).
+The Windows, Android and notarized Apple-silicon Mac previews use the existing account service. The complete standalone Python/runtime and local model packages are still being prepared. Intel Mac and Linux recipient installers remain separate release work. See [the exact download routes](DOWNLOADS.md).
 
 ## 2. Add your phone or tablet
 
@@ -24,6 +24,6 @@ Start with one useful task: save a work note, recover the same note in a new ses
 
 ## Choose what you have
 
-Start at the [download page](https://joshops.ai/download) for an available installer or [use the web app](https://pothos.joshops.ai/install). No GitHub account or developer role is required to use the published files. Native iOS store delivery and Mac/Linux installers remain separate release work. If you want to contribute development or testing, the [optional contributor form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) collects your platforms and proposed work. You can participate without a phone, without a personal computer, or as part of a lab; select the corresponding option. Do not post passwords or private account information.
+Start at the [download page](https://joshops.ai/download) for an available installer or [use the web app](https://pothos.joshops.ai/install). No GitHub account or developer role is required to use the published files. Native iOS store delivery and Intel Mac/Linux recipient installers remain separate release work. If you want to contribute development or testing, the [optional contributor form](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/issues/new?template=developer-participation.yml) collects your platforms and proposed work. You can participate without a phone, without a personal computer, or as part of a lab; select the corresponding option. Do not post passwords or private account information.
 
 [Official downloads](https://joshops.ai/download) · [Contribute](../CONTRIBUTING.md) · [Discuss your setup](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) · [Support and partnerships](SUPPORT-THE-PROJECT.md)
