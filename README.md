@@ -6,7 +6,7 @@ JoshOps AI is one application and operating stack across its supported desktop, 
 
 Founded and designed by **Joshua David Gustafson-Juarez**. The project welcomes community development for local AI sovereignty, accessibility and useful work in personal, nonprofit, business and developer environments.
 
-[Open JoshOps AI](https://pothos.joshops.ai/app) · [Downloads](docs/DOWNLOADS.md) · [Choose your device setup](docs/DEVICE_SETUP.md) · [Connect an assistant](docs/CONNECTIONS.md) · [Contribute](CONTRIBUTING.md) · [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) · [Support](SUPPORT.md)
+[Open JoshOps AI](https://pothos.joshops.ai/app) · [Downloads](docs/DOWNLOADS.md) · [Choose your device setup](docs/DEVICE_SETUP.md) · [Local engine choices](docs/LOCAL-ENGINE-BUILDS.md) · [Connect an assistant](docs/CONNECTIONS.md) · [Contribute](CONTRIBUTING.md) · [Discussions](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/discussions) · [Support](SUPPORT.md)
 
 ## Community release
 
