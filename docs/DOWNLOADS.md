@@ -6,7 +6,7 @@
 
 | Platform | Download | Status |
 | --- | --- | --- |
-| Windows x64 | [Installer 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-windows-x64.exe) | Official direct download; no Authenticode publisher signature |
+| Windows x64 | [Installer 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-windows-x64.exe) | Publisher signature verified; Windows Authenticode pending |
 | Android ARM64 | [Signed APK 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.apk) | Existing Android signing identity reused; signature verified |
 | Android developers | [Signed AAB 1.0.8](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.aab) | App bundle for developer review; not a Google Play listing |
 | ChatGPT / MCP clients | [Connection kit 0.3.2](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-connection-kit-0.3.2.zip) | OAuth configuration and scoped plugin source |
@@ -23,6 +23,9 @@ Exact SHA-256 values and the Android signing certificate fingerprint are in [rel
 
 [Phone nodes and local engines](PHONE_NODES.md) · [Support](../SUPPORT.md) · [Licensing](../LICENSE_STATUS.md) · [Connection setup](CONNECTIONS.md)
 
+[Publisher signatures and verification](PUBLISHER_SIGNATURES.md) cover the current Windows, Android, Mac and connection-kit downloads.
+
 ## What makes a download official?
 
 These are project-issued files linked from the JoshOps AI website and its official GitHub repository. "Official" identifies the publisher; it does not mean every package has store approval or a platform publisher certificate. Android can be distributed as a signed APK directly from a website ([Android distribution guide](https://developer.android.com/distribute/marketing-tools/alternative-distribution)). For the planned broad iPhone/iPad release, App Store Connect manages App Store submission and TestFlight testing ([Apple distribution guide](https://developer.apple.com/app-store-connect/)). Store buttons will point to the actual listing or invitation when published; they will not be placeholders.
+

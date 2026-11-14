@@ -1,0 +1,91 @@
+{
+  "schema": "joshops.publisher-signatures.v1",
+  "product": "JoshOps AI",
+  "publisher_key_sha256": "f2279d3df6eb9a0184e3f570d36e977750cc529ca724bf733bb3c11d96d383f5",
+  "public_key_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/JoshOps-AI-release.pub",
+  "signature_download_base": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/",
+  "signature_kind": "Existing updater key; Minisign/Ed25519 detached signatures",
+  "windows_authenticode_verified": false,
+  "ip_assignment_inferred": false,
+  "store_approval_inferred": false,
+  "assets": [
+    {
+      "file": "JoshOps-AI-1.0.8-windows-x64.exe",
+      "bytes": 7777933,
+      "sha256": "d0676fc5bf382355dc09fe0814ccd4af64ac2243b3ad0705ca4afb686ca03adb",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-windows-x64.exe",
+      "os_signature_status": "Windows Authenticode pending",
+      "tauri_signature": "JoshOps-AI-1.0.8-windows-x64.exe.sig",
+      "minisign_signature": "JoshOps-AI-1.0.8-windows-x64.exe.minisig",
+      "signature_sha256": "9912131c5682c377cf770a7bbdc281412b339d11e9ee32c71e327741c559497e",
+      "minisign_sha256": "3a13cfcf5a58276256d35aa92b1aed825631d912abec7259057f57ce0d9ddfcc",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    },
+    {
+      "file": "JoshOps-AI-1.0.8-android-arm64.apk",
+      "bytes": 172263845,
+      "sha256": "7429c9baff5b77d1ecb6b1eb73cebd8bb91f4062983347a918dcd668ac75d8a5",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.apk",
+      "os_signature_status": "Android release signature verified",
+      "tauri_signature": "JoshOps-AI-1.0.8-android-arm64.apk.sig",
+      "minisign_signature": "JoshOps-AI-1.0.8-android-arm64.apk.minisig",
+      "signature_sha256": "c5098323d94eec7e5abe495df93df5ef1b73642c9029f2f427d9e1714dd851cc",
+      "minisign_sha256": "0bbed8e9889a84ac58dc16149cfe08f1de2fd80c0d547d972d644f1f3c26b295",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    },
+    {
+      "file": "JoshOps-AI-1.0.8-android-arm64.aab",
+      "bytes": 46261545,
+      "sha256": "96af344254b83ac5831d506702f175a0e9b8fe2087601cfc18ef3a6324bae4ec",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-1.0.8-android-arm64.aab",
+      "os_signature_status": "Android release signature verified",
+      "tauri_signature": "JoshOps-AI-1.0.8-android-arm64.aab.sig",
+      "minisign_signature": "JoshOps-AI-1.0.8-android-arm64.aab.minisig",
+      "signature_sha256": "409920896b4ce9d7a8107654b2915ad9c634eda8ee4827fbe3a3b34bd800893d",
+      "minisign_sha256": "d3ce970428a6d7dfc51f9d310474626facec831bb670afe1ce436a2fa178fdcb",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    },
+    {
+      "file": "JoshOps-AI-connection-kit-0.3.2.zip",
+      "bytes": 30854,
+      "sha256": "3e391e445507282a5714910aff716b3ba25e2a21c68605fe59f604b9dbc9ac04",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.8-beta.1/JoshOps-AI-connection-kit-0.3.2.zip",
+      "os_signature_status": "Connection configuration package",
+      "tauri_signature": "JoshOps-AI-connection-kit-0.3.2.zip.sig",
+      "minisign_signature": "JoshOps-AI-connection-kit-0.3.2.zip.minisig",
+      "signature_sha256": "221843f506fefcb85a6c2d94076ecbb712e7f93498fa27125de916844bb6e5b2",
+      "minisign_sha256": "33ae01af8241ec7fe281136024924cff968c7c054430f662a7e539fce5b86fd1",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    },
+    {
+      "file": "JoshOps-AI-1.0.10-macos-arm64-notarized.dmg",
+      "bytes": 9935081,
+      "sha256": "4f97c28c24af5bdf0c9a294f31487df752b4c47cf5aaddca0ecb3ad9e784f86b",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/JoshOps-AI-1.0.10-macos-arm64-notarized.dmg",
+      "os_signature_status": "Developer ID and accepted Apple notarization",
+      "tauri_signature": "JoshOps-AI-1.0.10-macos-arm64-notarized.dmg.sig",
+      "minisign_signature": "JoshOps-AI-1.0.10-macos-arm64-notarized.dmg.minisig",
+      "signature_sha256": "4fc8d8a7de9ad75a910d428b9173c6461ff565db036d9db0b7541957f8cdfa15",
+      "minisign_sha256": "d16923961735e172482004e9fe62130024ad85c6ab02ed059723eb201af8d392",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    },
+    {
+      "file": "SHA256SUMS-1.0.10.txt",
+      "bytes": 599,
+      "sha256": "b786a021d09e63ebf57347321a17af4248691ec4dfdb48f3230d288551531d62",
+      "download_url": "https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/SHA256SUMS-1.0.10.txt",
+      "os_signature_status": "Checksum list covering the Mac release and dependency records",
+      "tauri_signature": "SHA256SUMS-1.0.10.txt.sig",
+      "minisign_signature": "SHA256SUMS-1.0.10.txt.minisig",
+      "signature_sha256": "a330d592e001d1a47613f8e0f9edc93c4b455cebb61754c862d28e80d0e6b630",
+      "minisign_sha256": "aa3c99c1c7b088e6da2573bae23b6a5e49a0feb4c31b6f3724eebc2416b41acc",
+      "exact_signature_verified": true,
+      "tampered_bytes_rejected": true
+    }
+  ]
+}

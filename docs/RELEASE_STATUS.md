@@ -8,7 +8,7 @@ The product repository and its release assets are **public**. Founder repositori
 | --- | --- | --- |
 | Mac — Apple silicon | Version 1.0.10 signed; Apple notarization accepted; staple and Gatekeeper verified | [Public connected preview](https://github.com/joshuagjuarez/PothOS-by-JoshOps-AI/releases/download/v1.0.10-beta.1/JoshOps-AI-1.0.10-macos-arm64-notarized.dmg); anonymous download hash verified |
 | Mac — Intel | Working native installation verified | Request device testing; public installer pending |
-| Windows x64 | Master-source application packaged as version 1.0.8 | Official direct installer; unsigned (no Authenticode publisher signature) |
+| Windows x64 | Master-source application packaged as version 1.0.8 | Direct installer with a verified publisher signature; Windows Authenticode pending |
 | Linux — Ubuntu x86_64 | Working local AI workbench on enrolled computers | Request device testing; public recipient installer pending |
 | iPhone / iPad | Version 1.0.7 / build 1.0.9 signed, uploaded and processed VALID by Apple | Existing App Store draft prepared; review requirements remain; no public App Store or TestFlight link |
 | Android ARM64 | Native account-connected application with local-engine libraries | Official signed direct APK 1.0.8; AAB available for developers; no Google Play listing |
@@ -34,3 +34,4 @@ Fresh recipient-device acceptance, Windows publisher signing, Intel Mac/Linux re
 The existing website's private Git source and two-way Lovable synchronization were verified on November 13. A GitHub source checkpoint is not a website deployment.
 
 Maintainers preserve original failures and successor results. Unknown signing, upload or execution outcomes are recovered before retry.
+
